@@ -1,0 +1,11 @@
+0. scraped (3-5 star)                          144436
+1. non-empty                                   144435
+2. PII removed                                 144435
+3. 6-60 words                                   35101
+4. deduplicated                                 34971
+5. not already collected                        24838
+6. code-mixed (Hindi ratio >= 0.2)                689
+7. capped for annotation                          450
+
+Stars in to_annotate_v2.csv: {4: 139, 5: 311}
+Apps: {'dominos': 60, 'blinkit': 60, 'zepto': 60, 'bigbasket': 57, 'swiggy': 57, 'zomato': 51, 'eatsure': 43, 'magicpin': 35, 'burgerking': 14, 'kfc': 8, 'mcdonalds': 5}

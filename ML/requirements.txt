@@ -1,0 +1,13 @@
+# For an NVIDIA GPU (RTX 50-series needs CUDA 12.8), install torch first:
+#   pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+# For CPU only:
+#   pip install torch==2.7.1
+# Or just run:  python setup_ml_env.py   (detects the GPU and does all of this)
+transformers==4.46.3
+pandas==3.1.0
+numpy==2.5.4
+scikit-learn==1.9.1
+fastapi==0.162.0
+uvicorn==0.54.0
+google-play-scraper==1.2.7
+tqdm==4.70.1

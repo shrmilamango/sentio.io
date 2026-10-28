@@ -1,0 +1,278 @@
+id,review_text,app_name,source,star_rating,overall_sentiment,delivery_time,food_quality,packaging,delivery_partner,app_experience,price_offers,refund_support,sarcasm,annotator
+FD0005,blinkit chor company hai agr payment refund nahi karta hai mare 23/8/2026,blinkit,playstore,1,neutral,none,none,none,none,none,none,negative,no,Shivman
+FD0013,charge Bahut jyada leta hai ye,swiggy,playstore,1,negative,none,none,none,none,none,negative,none,no,Shivman
+FD0016,third class app hai sab chor hai isme order kha jaate hai or support wale bhi koi sunwai nhi karte hai bas paiso se matlab hai kabhi use na karo app ko,zomato,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shivman
+FD0021,cash pm delivery nahi hota hai mere number pe 😡,dominos,playstore,2,negative,none,none,none,none,negative,none,none,no,Shivman
+FD0023,bekar hai wallet main paise Aakar hat jaate Hain,bigbasket,playstore,1,negative,none,none,none,none,none,negative,none,no,Shivman
+FD0024,accha hai thik hai useful loading mein time leta hain,dominos,playstore,4,positive,none,none,none,none,negative,none,none,no,Shivman
+FD0026,platform fee aur gst bohot zyada hai,swiggy,playstore,2,negative,none,none,none,none,none,negative,none,no,Shivman
+FD0028,Blinkit Paise leke order cancel kar de raha hai mujhe uske hub pe jana pad raha hai saman lene kya fayda,blinkit,playstore,1,negative,none,none,none,none,none,none,negative,no,Shivman
+FD0035,Mashine return leke gaya aapka partner amount refund Nahi Hua hai Froud hua hai mere sath koi return jawab nahi dete koi contact number bhi nahi email pe koi answer Nahi milta sab fake hai aaj refund Nahi Hua to Case Book karne wala Hu main,zepto,playstore,1,negative,none,none,none,none,none,none,negative,no,Shivman
+FD0055,bahut late delivery hoti hai or payment pehle le lete hai bad me order cancel kar dete hai kabhi kabhar by chance hi order milta hai zyada tar to cancel hi kar dete hai jab cancel hi karna hota hai to payment q pehle hi le lete hai,magicpin,playstore,2,negative,negative,none,none,none,none,none,negative,no,Shivman
+FD0065,jaise rakhi dikhya waisa Mila ny,bigbasket,playstore,2,negative,none,negative,none,none,none,none,none,no,Shivman
+FD0072,Har chiz aap alag alag deliver karte ho proper packaging nahi hai,bigbasket,playstore,2,negative,none,none,negative,none,none,none,none,no,Shivman
+FD0085,faltu app prepaid order cancel kar dete hai or refund bhi nahi dete hai fraud hai,blinkit,playstore,1,negative,none,none,none,none,none,none,negative,no,Shivman
+FD0089,aap to badhiya hai per sari dikkat kya hai agar ek order cancel kar do to yah app cash delivery band Ho jaati Hai,zepto,playstore,4,neutral,none,none,none,none,negative,none,none,no,Shivman
+FD0102,Tim se pehle hi delivery ho gaya,swiggy,playstore,5,positive,positive,none,none,none,none,none,none,no,Shivman
+FD0114,bakwaasss hai yaar amount itta jyada lete hai kux magao. ek dam ghatiya aata hai isse axa to Zomato hai,swiggy,playstore,2,negative,none,negative,none,none,none,negative,none,no,Shivman
+FD0116,bhot hi acha app he chije bhi bht sasti he lut lo❤,zepto,playstore,2,positive,none,none,none,none,none,positive,none,no,Shivman
+FD0123,mere 700 rupees gaye or ye scammer hai,blinkit,playstore,2,negative,none,none,none,none,none,none,none,no,Shivman
+FD0146,delivery gud hai but complaint nahi since,zepto,playstore,3,positive,positive,none,none,none,none,none,none,no,Shivman
+FD0150,ye order lelete hai or saman bhejte nahi hai frod hai wait karte raho bad censal kadete hai aur fund bhi nahi vapice krte hai aaj inhone mere sath frid kiya hai mene order Kiya tha bheja hi nahi na hi fund ritten kiya,eatsure,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shivman
+FD0157,ghatiya service. Kai tarah ke charges lene ke baad bhi 2 ghante me delevery dete hai.,swiggy,playstore,1,negative,negative,none,none,none,none,negative,none,no,Shivman
+FD0168,sari feesh leta hai ye app or offer bhi nahi deta hai,zepto,playstore,2,negative,none,none,none,none,none,negative,none,no,Shivman
+FD0186,bhot faltu app koi oder mt karo es par kuch bhi oder place hone ke baad thode der Mai cancel ho jata he.,bigbasket,playstore,1,negative,none,none,none,none,none,none,negative,no,Shivman
+FD0199,cash on delivery ismein nahin ho raha hai mere account mein,blinkit,playstore,1,negative,none,none,none,none,negative,none,none,no,Shivman
+FD0200,big basket jab apke pass delevery partner nhi hote to please order accept mt kiya kro customer ko kitni pareshani hoti hai,bigbasket,playstore,1,negative,negative,none,none,none,none,none,none,no,Shivman
+FD0201,lots of pizza are non offers and tex and or charges ke sath koi discount nhi ho raha zyada jaise 30 rs pizza bataya gaya esa kuch he nhi,dominos,playstore,1,negative,none,none,none,none,negative,negative,none,no,Shivman
+FD0208,1:30 ghante se order banaye Jaa Rahe hai pata nhi kya kar rahe hai call PE call kare Jaa rahe hai Naa hee call utha rahe hai pata nhi konsi meeting fail ho Rahi hai inki,gmaps,gmaps,1,negative,negative,none,none,none,none,none,negative,no,Shivman
+FD0211,Bhut bekar ganda khana or ek dum kachi moti roti,gmaps,gmaps,1,negative,none,negative,none,none,none,none,none,no,Shivman
+FD0212,order 160 ka hai aur 220 amount show ho Raha hai ghatiya service,zomato,playstore,1,negative,none,none,none,none,negative,negative,none,no,Shivman
+FD0213,"aapke app mein Hamare Taraf ki location a to rahi hai per vah confirm Nahin ho rahi hai, aur aapke Jaise location ki problem ho rahi hai",bigbasket,playstore,2,negative,none,none,none,none,negative,none,none,no,Shivman
+FD0219,2bar order karna pada 1la mulund ka order Kanjurmarg gaya fir cancel karke 2bara order karna pada,zepto,playstore,2,negative,none,none,none,negative,negative,none,none,no,Shivman
+FD0234,bilkul bekaar khana lata hai sab mat lo bhai log,zomato,playstore,1,negative,none,negative,none,none,none,none,none,no,Shivman
+FD0259,lekin 49 minute bolke 56 minute mein ata hai delivery boy,eatsure,playstore,4,negative,negative,none,none,none,none,none,none,no,Shivman
+FD0262,very bad experience...wrong product bhejte hai aur wapas nhi lete hai ..n no refund also,bigbasket,playstore,1,negative,none,negative,none,none,none,none,negative,no,Shivman
+FD0267,delivery option enable hai order karne ke liye zomato ya Swiggy se order karna padega,burgerking,playstore,1,negative,none,none,none,none,negative,none,none,no,Shivman
+FD0269,bahenkelaude shinal k orders exchange karwana hai lekin kuch option nahi dera tu,blinkit,playstore,1,negative,none,none,none,none,negative,none,none,no,Shivman
+FD0278,not useful because sirf paste looted hain,dominos,playstore,1,negative,none,none,none,none,none,negative,none,no,Shivman
+FD0281,kutte bhi na khaye inki roti itna ganda khana itni gandi roti plz koi na mangaye varna kutto ko daalna padega khana,zomato,playstore,1,negative,none,negative,none,none,none,none,none,no,Shivman
+FD0287,Kafi badhiya chij hai App 20 minutes mein,eatsure,playstore,3,positive,positive,none,none,none,positive,none,none,no,Shivman
+FD0315,mene saffola oil order kiya tha 15L wala mujhe aapne 2675₹ mein diya or abhi mene rate dekha box par to vo 2475₹ dikh rha h aapne fraud kiya h mujhe 200₹ refraud kare aap mujhe contact karo,zepto,playstore,1,negative,none,none,none,none,none,negative,none,no,Shivman
+FD0316,product sasta to aata he lekin mujhe ak baar leakage product bhej diya Mane jab complaint Kiya to bola ke kuch dino me paise refund kar dene lekin abhi tak nahi kiya is baat ko 3 se 4 din ho gaye,zepto,playstore,2,negative,none,none,negative,none,none,positive,negative,no,Shivman
+FD0322,jyada Paisa lete hain aur garm khana nahin bhejte,swiggy,playstore,2,negative,none,negative,none,none,none,negative,none,no,Shivman
+FD0323,online kaam dikhta hai cash me jada magte hai,bigbasket,playstore,2,negative,none,none,none,none,none,negative,none,no,Shivman
+FD0328,koi bhi item wapas nahi karte hai agar 2 se 3 din me pata chle ki wah sahi kam nahi kar raha hai,blinkit,playstore,1,negative,none,none,none,none,none,none,negative,no,Shivman
+FD0334,Accha khana nahi h Service bhi achhi nahi Oder me bahut let hota h Thali ka cost money bhi jayada h Standard quality ki Ve Vasta Nahi Hai,gmaps,gmaps,1,negative,negative,negative,none,none,none,negative,none,no,Shivman
+FD0341,Bad service online payment Lene ke bad bhi Saman deliver nahin karte third class service payment bhi refund nahi karte hai,blinkit,playstore,1,negative,negative,none,none,none,negative,none,negative,no,Shivman
+FD0342,tumhara ek bakwas hai aur tumhari service bhi bakwas hai jo order karo vah hota nahin hai aur Jo nahin order karo ho jata hai nau rupaye ki Biryani order Kari to 106 ka burger order Ho Gaya rs 9 ki Biryani Hui,swiggy,playstore,1,negative,none,none,none,none,negative,none,none,no,Shivman
+FD0351,kuch vi nahi hai poor aap,eatsure,playstore,1,negative,none,none,none,none,negative,none,none,no,Shivman
+FD0354,Delivery time badha dete hai apne aap slightly delay likhkar 4 baar time delay Kiya mera khana thanda ho gya or late aaya rat m bhhot wait Kiya uske baad,zomato,playstore,1,negative,negative,negative,none,none,negative,none,none,no,Shivman
+FD0358,bilkul faltu app hai koi bhi use mat karna order karne ke bad jab payment karne jaate hai tab page error dikhane lagta hai. bahut bar try karne ke bad order confirm hoga to mujhe burger Basi Mila usmein se halki badbu 🤮 bhi aa rahi thi.,burgerking,playstore,1,negative,none,negative,none,none,negative,none,none,no,Shivman
+FD0365,bohot bekar app hai 150 ka saman mangvao to 40 delivery charge lagta hai,blinkit,playstore,1,negative,none,none,none,none,negative,negative,none,no,Shivman
+FD0416,"Are bhai location kya issue thik Karo seriously it was really annoying af address set hi nahi ho raha , why the hell we can't add our address manually from the settings are order tabhi karega jab address add karne milega faltu jaisa first see the menu destination can wait dala hua hai",eatsure,playstore,3,negative,none,none,none,none,negative,none,none,no,Shivman
+FD0422,bakwaas app hamesha rider late hota hai laata hi nahi kabhi bhi time par order pick karne ke baad 1hour 30 min ki bol raha hai abhi bhi inka rider and the rider name is dhruv,eatsure,playstore,1,negative,negative,none,none,negative,negative,none,none,no,Shivman
+FD0427,ager tum ye soch ke ise download kar rahe ho ki home delivery hoga to mat karna mera 650 lag giya order me fir pH kiya to bol raha hai ki isme home delivery nehi hota or 4din ho gaya abhi tak refund nehi mila.,burgerking,playstore,2,negative,none,none,none,none,negative,none,negative,no,Shivman
+FD0433,it is a fraud app ye khud coupon dete ha or bhejte he nahi hai or khud cancelled karke bolte hai ap call pickup nahi kiya isliye or cancel kar diya it is a fraud app,bigbasket,playstore,1,negative,none,none,none,none,negative,negative,negative,no,Shivman
+FD0469,cash on delivery ka opsan dena chahiye,zomato,playstore,2,neutral,none,none,none,none,negative,none,none,no,Shivman
+FD0474,Allahabad me Lucknow wala swad mil rha hai,gmaps,gmaps,5,positive,none,positive,none,none,none,none,none,no,Shivman
+FD0481,Yaar Amazon r Flipkart ke voucher band kyu kar diya,magicpin,playstore,2,negative,none,none,none,none,none,negative,none,no,Shivman
+FD0494,dikhaya bada aur Diya Chhota mere Sath scam Ho Gaya,blinkit,playstore,2,negative,none,negative,none,none,none,none,none,no,Shivman
+FD0495,delivery se phle payment kro fir delevery hogi nahi,kfc,playstore,1,negative,negative,none,none,none,none,none,none,no,Shivman
+FD0500,buy one get one free hai jab order karne jao to donon price le rahe hain,eatsure,playstore,1,negative,none,none,none,none,none,negative,none,no,Shivman
+FD0502,late delevery last time and thanda pizza tha batao esa hota hai,dominos,playstore,1,negative,negative,negative,none,none,none,none,none,no,Shivman
+FD0503,"Ekdm bakwas app h , isse aacha toh zomato hai . agar hotel me koi food 130 ka h toh Swiggy me wo food 340 ka milta h , bahut jada over charge , and yaha pe refund bhi nhi aata , worst app ever used",swiggy,playstore,1,negative,none,none,none,none,none,negative,negative,no,Shivman
+FD0535,Abe jab sabne ek star diy hai to 4.7 ki rating kaise 😂,zepto,playstore,3,negative,none,none,none,none,none,none,none,no,Shivman
+FD0542,bahut bekar hi gift voucher maine kharida Amazon par dikha raha hai ki galat hai Dhokha kar rahe hai ban kar do is app ko,magicpin,playstore,1,negative,none,none,none,none,none,negative,none,no,Shivman
+FD0545,sahi hai good but ane do tab btounga pizza kaisa tha,dominos,playstore,4,neutral,none,none,none,none,none,none,none,no,Shivman
+FD0548,thora sa mitha kam hota hai but thik hai,swiggy,playstore,2,neutral,none,neutral,none,none,none,none,none,no,Shivman
+FD0552,order date pe kyun nehi delivery ho sakta hai,bigbasket,playstore,3,negative,negative,none,none,none,none,none,none,no,Shivman
+FD0559,Thik tha pizza leken par pizza ka rate bohot upar nicha hota hai,dominos,playstore,2,neutral,none,neutral,none,none,none,negative,none,no,Shivman
+FD0565,"Zepto ke delivery partner ne order time par deliver nahi kiya, alag-alag excuses banaye aur mere paise bhi wapas nahi kiye. Is bekar service aur unprofessional behavior ki wajah se mera time aur mood dono kharab ho gaye, isliye maine Zepto app hamesha ke liye uninstall kar diya hai.",zepto,playstore,1,negative,negative,none,none,negative,none,none,negative,no,Shivman
+FD0580,We order roti and paneer ki sabji and noodles we are 5 people and hum subki tabiyat kharab hai waha ka khana kha kr,gmaps,gmaps,1,negative,none,negative,none,none,none,none,none,no,Shivman
+FD0583,wo deepak naam ka gawar ghade ka poot jab baal ki muh mai dikkat hi hai toh order receive he kyu karta hai unpadh Aligarh mai tujh jaise delivery man ko nikal dena chahiye,blinkit,playstore,1,negative,none,none,none,negative,none,none,none,no,Shivman
+FD0584,mere ghar pe. nahi ata zepto to kya. kare blinkit hi ata. hai. okk. so that why I hate zapto 😞,zepto,playstore,2,negative,none,none,none,none,none,none,none,no,Shivman
+FD0586,zepto walo kya kar rahe ho tumlog bhai jo hame mangana hota hai wo stock hi hota hai harbaar na hi tum stock wali cheej jaldi nhi late ho kya kar rahe ho bhai tumlog thoda dhyan do bhai apne saman par isliye mai rating karta tu 2 star,zepto,playstore,2,negative,negative,none,none,none,none,none,none,no,Shivman
+FD0590,"Dear Swiggy, kripya apna Instamart Sitamarhi, Bihar mein start kariye.. Kyoki aapke competitor log Sitamarhi k market mein aa rahe hai..",swiggy,playstore,3,neutral,none,none,none,none,none,none,none,no,Shivman
+FD0599,bro kaam kro thoda apne upr or app pr,zomato,playstore,2,negative,none,none,none,none,negative,none,none,no,Shivman
+FD0602,Domino's ki servicing bahut bekar hai pahli bar Maine itna Bura Pizza dekha Main soch bhi nahin Sakta tha itna Bura pizza Domino's wale denge per aaj ke bad main Kisi Ko dominos se Pizza mangaane ke liye recommend nahin karunga bilkul bhi,dominos,playstore,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD0603,paise kam dikha kar Jyada Lete Hain,dominos,playstore,2,negative,none,none,none,none,none,negative,none,no,Shreya
+FD0605,bakwaas hai pehle accha tha ye app ab to 50rs k food ko 150rs mein deta hai delevery charge laga kr,magicpin,playstore,1,negative,none,none,none,none,none,negative,none,no,Shreya
+FD0612,bhai payment ho gyi h order show nhi ho rha,magicpin,playstore,1,negative,none,none,none,none,negative,none,none,no,Shreya
+FD0624,pls cash on delivery on rakho Aap jo online use nahi karte woh kaise order karenge pls pls pls,zomato,playstore,2,neutral,none,none,none,none,negative,none,none,no,Shreya
+FD0625,thik thik hai not like other apps,magicpin,playstore,3,neutral,none,none,none,none,none,none,none,no,Shreya
+FD0628,jo shop se ata hai unlog bahot Kharab bhejte Hai....please kuch karo,zomato,playstore,2,negative,none,negative,none,none,none,none,none,no,Shreya
+FD0631,Overall quality aur atmosphere thik hai,gmaps,gmaps,4,positive,none,positive,none,none,none,none,none,no,Shreya
+FD0633,30-35 dikha rha tha abhi tk ni aaya usse jada time ho gyaa very poor service,swiggy,playstore,1,negative,negative,none,none,none,negative,none,none,no,Shreya
+FD0638,"no customer service, uper se idiotic bot laga diya he.",swiggy,playstore,1,negative,none,none,none,none,negative,none,negative,no,Shreya
+FD0641,buy 1 get 1 Free order nhi ho rha hai,zomato,playstore,2,negative,none,none,none,none,negative,negative,none,no,Shreya
+FD0664,app bilkul bhi achha nhi hai dilevery boy ke pass change nhi tha toh mera order 184 kaa tha maine usko 200 diya tha usne change nhi diya bola change nhi hai mere pass aur order deke chala gya maine unko roka par ruke nhi bole app pe complain kr do jao bhot he bekaar service h inki,eatsure,playstore,1,negative,none,none,none,negative,negative,none,negative,no,Shreya
+FD0682,yeh app ne bhi apni aukat dikhana start kar diya hai dhure dhire ye log bhi customer service ko degrade krte ja rahe hai ...support chats se koi answer nahi milta hai,zomato,playstore,1,negative,none,none,none,none,negative,none,negative,no,Shreya
+FD0690,account deactivate kar dete hai bina puche,bigbasket,playstore,1,negative,none,none,none,none,negative,none,none,no,Shreya
+FD0691,sabse kharab Jo ruling ke Bane uske palan nahin karna,dominos,playstore,1,negative,none,none,none,none,negative,none,none,no,Shreya
+FD0696,support hi nahin karta hai jaldi open bhi nahin hota hai app bahut hi slow hai,zomato,playstore,1,negative,none,none,none,none,negative,none,negative,no,Shreya
+FD0701,itna ghatiya aap kabhi nahin dekha... koi mistake main order Kiya bhi hoga par cancel karneka koi option hi nahi diya hai inhone...,swiggy,playstore,1,negative,none,none,none,none,negative,none,none,no,Shreya
+FD0704,Sbiryani inki bht sadi lg rhi thi,gmaps,gmaps,3,negative,none,negative,none,none,none,none,none,no,Shreya
+FD0708,bakwas hai Inka vajan kabhi bhi 100% Sahi nahin rahata Hai 1. kg matlab 850 gram hi mal milta hai plz chak,blinkit,playstore,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD0734,"Very Bad Experience! Order bina delivery ke hi Delivered dikha raha hai. 2 din se BigBasket team koi response nahi de rahi. Na customer care reply kar raha hai, na refund. Aisa lag raha hai company aur delivery boy milke customers ko loot rahe hain. Bilkul fraud service hai. Kabhi BigBasket se order mat karna",bigbasket,playstore,1,negative,none,none,none,negative,negative,none,negative,no,Shreya
+FD0740,"ghatiya riders , or bina puche order cancel Krna",zomato,playstore,1,negative,none,none,none,negative,negative,none,negative,no,Shreya
+FD0742,worst customer experience phale toh order accept kar lete h 1 hour se jyda Wait karte h fir order cancel kar dete h aise mere sath 2 bar ho chuka h,dominos,playstore,1,negative,negative,none,none,none,negative,none,negative,no,Shreya
+FD0747,sabse bekar application Hai yah Koi time ka confirmation nahin deta order kiye hue 2 ghante Ho chuke hain Kuchh milta nahin call karo to attitude dekhne Ko milta Hai Koi use na Karen 💢 duniya ka sabse bekar app h yaa,eatsure,playstore,1,negative,negative,none,none,none,negative,none,negative,no,Shreya
+FD0758,bhot ganda experience tha mera first time maine order Kara and delivery boy ne aakr direct company se baat krke mera order cancel Kara or Maine full payment Kari thi uske baad bhi order cancel Kara or mera refund nhi diya vapas abhi tak and koi response bhi nhi hain cheap log,zepto,playstore,1,negative,none,none,none,negative,negative,none,negative,no,Shreya
+FD0760,koi bhi Saman kharab ho jata hai to uski Koi jimmedari nahin Hai Paisa bekar jata hai,blinkit,playstore,1,negative,none,negative,none,none,none,none,negative,no,Shreya
+FD0768,inhe cash on delivery ke liye change kabhi nahi hota,blinkit,playstore,1,negative,none,none,none,negative,negative,none,none,no,Shreya
+FD0771,bakwas product dete hai aur wapas bhi nahi lete hai,blinkit,playstore,1,negative,none,negative,none,none,none,none,negative,no,Shreya
+FD0783,partner bahut bekar Hai itni let deliver karte Hain,zomato,playstore,1,negative,negative,none,none,negative,none,none,none,no,Shreya
+FD0785,Time se upar bhi 30 min wait Kiya but phir bhi nhi aaya,blinkit,playstore,1,negative,negative,none,none,none,none,none,none,no,Shreya
+FD0786,bakwas app hai koi sunwai nahi band kardo application,dominos,playstore,1,negative,none,none,none,none,negative,none,negative,no,Shreya
+FD0793,Worst I have been eaten in my life Yaha ka veg biryani bilkul bhi accha nhi h ...isse accha h aap kahi aur kha le .,gmaps,gmaps,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD0796,Aaj pahli bar Zomato chalaya hai dekhte hain agar time se aaega tabhi reading hai o,zomato,playstore,2,neutral,none,none,none,none,none,none,none,no,Shreya
+FD0797,Koi nhi aaya na koi phone aaya 0.000000 bbad service last order bhi same problem 2 din delivery woh bhi raat 10/11 pm phir b8na bataye order cancel jab bhejna nhi ha toh order lo mat Har baar same ha,bigbasket,playstore,1,negative,negative,none,none,negative,negative,none,negative,no,Shreya
+FD0800,not punctual.... time management sahi nhi hai,zomato,playstore,2,negative,negative,none,none,none,none,none,none,no,Shreya
+FD0801,bakvas App hai meri order diye bhi nhi our uprse maire 105rs bhi liye Delivery boy ne order diya hi nhi our company ne refund bhi nhi kiya😡,zomato,playstore,1,negative,none,none,none,negative,negative,none,negative,no,Shreya
+FD0806,sabse chor company mera Instamart order cancel hone par pura payment kha gai chor company h koi bhi order nhi kare,swiggy,playstore,1,negative,none,none,none,none,negative,none,negative,no,Shreya
+FD0822,order karne ke bad packing mein bahut jyada time lagta Hai Baki delivery service bahut fast hai,zepto,playstore,3,neutral,negative,none,negative,none,negative,none,none,no,Shreya
+FD0825,zomato me ek delivery ata hai 1h lagta hai kya yaar,zomato,playstore,3,negative,negative,none,none,none,none,none,none,yes,Shreya
+FD0827,itna bekar sach me itna thanda burger aaya me ab dubara prefer nhi kruga zometo,zomato,playstore,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD0828,pehle dekhta ho kia ata hai,dominos,playstore,5,neutral,none,none,none,none,none,none,none,no,Shreya
+FD0831,old ration supply kar raha hai blink kit achcha nahin chal raha hai,blinkit,playstore,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD0832,monopoly hai sir apka .pehle paisa lijiye phir mistake bata ke 70% return.average 1 day ka 30% 5 lakh client se ..sahi scam hai,zomato,playstore,1,negative,none,none,none,none,negative,none,negative,yes,Shreya
+FD0834,froud app agar kise ki pass online nhi hai cash hai to bo online koi bhi Saman odher nhi kar sakta froud this app,zepto,playstore,1,negative,none,none,none,none,negative,none,none,no,Shreya
+FD0835,preepaid order mai bewkuf bnati hai sbse bekr servers hai,swiggy,playstore,1,negative,none,none,none,none,none,none,none,no,Shreya
+FD0843,handling fees bahut jayada hai cary bag bhi nhi milta hai,zepto,playstore,3,negative,none,none,negative,none,negative,negative,none,no,Shreya
+FD0848,very bed Bigbasket yesterday ka or 30 hrs m recived hua bahut ghatiya service hai,bigbasket,playstore,1,negative,negative,none,none,none,negative,none,none,no,Shreya
+FD0879,extra charge mat lo bhai natak mai bhi jaga nhi melegi,zomato,playstore,1,negative,none,none,none,none,none,negative,none,no,Shreya
+FD0880,bahut hi achha behtar sarvice hai,zepto,playstore,4,positive,none,none,none,none,positive,none,none,no,Shreya
+FD0897,Hamesha bekar experience hota hai mostly defective products hi aate hai ya orders me changing kabhi milk ki ljgh dahi kabhi product ki quality itni bekar lagta ha pata nh kaha se utha kr bhej diya saman itni gandi packaging purane pade hue utha ke bhej dete hai,zepto,playstore,3,negative,none,negative,negative,none,none,none,none,no,Shreya
+FD0904,bhut hi bekar app h food order krte h to dikhata h aa raha h uske 1 hour ke baad bhi deliver nhi hota fir order khud hi cancel ho jata khud se cancel krke ye log refund bhi nhi dete fraud app h,swiggy,playstore,2,negative,negative,negative,none,none,negative,none,negative,no,Shreya
+FD0905,its very bad app maine food oder kiya tha isse prepaid oder tha delivered hua nhi or diliver dikha raha hai or n hi maine kisi ko otp diya or n mujhse koi delivery boy mila or mere paise bhi return nhi mile its totally fraud,magicpin,playstore,1,negative,none,negative,none,negative,negative,none,negative,no,Shreya
+FD0918,bakwas hai sab ek toh order Kiya toh 1-2 ghante lagte hai order aane mein..upar se payment pahale lete hai or order cancel kar dete hai bad mein refund mein 7 din lagate hai... pura bakwas ekdam 3rd class experience hai es magicpin ka..,magicpin,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shreya
+FD0923,are zepto walo ye kya doglapan hai gali no. 8 me delhivery hai meri gali no. 10 me nahi azib h tumhra,zepto,playstore,1,negative,none,none,none,none,none,none,none,no,Shreya
+FD0925,bad test ek dam thanda burger tha or jo Oder kiya tha wo to tha hi ni pta hota to bilkul Oder na krte 3th qwality,burgerking,playstore,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD0926,Bhai bohot let ke diya in hone,burgerking,playstore,1,negative,negative,none,none,none,none,none,none,no,Shreya
+FD0933,delivery time k liye 5 star kyuki Swiggy order k baad time jo dikhata hai ussey bhi 35 40 min baad bhejta hai...or khane k liye 10 star ⭐ kyuki thanda khana aata hai jise khane ka aapka kbhi Mann nhi karta..ek order karo or bhuke maro Swiggy ki nayi policy shaandar h,swiggy,playstore,1,negative,negative,negative,none,none,negative,none,none,yes,Shreya
+FD0946,bekar app hai ... isse accha to Swiggy or zomato hai ✨❤️‍🩹.....BLINKIT 🤮 ..... FALTU #App mera location pe nhi ayega me town me rehta hu fir vi to fir app kyu banaya 💩😆🤣🤣,blinkit,playstore,5,negative,none,none,none,none,negative,none,none,no,Shreya
+FD0954,thik he lekin hotel se mhega he,zomato,playstore,3,neutral,none,none,none,none,none,negative,none,no,Shreya
+FD0956,kya re ye rates thu teri,kfc,playstore,1,negative,none,none,none,none,none,negative,none,no,Shreya
+FD0959,bahut hi ganda app hai Pizza ekadam third class ke bheja isne,swiggy,playstore,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD0962,Kitna ghatiya app hein yaar delivery time se Hota hi nahi kabhi order karun 8mins pe 20mins se dhikata hi rahega delivery partner assigned nahi Hota ghoom ghoom ke 30mins ke baad bolenege late hoga,swiggy,playstore,1,negative,negative,none,none,none,none,none,none,no,Shreya
+FD0967,1 ghante se upar ho gya advance me payment bhi le liya or order bhi abhi tak assign nhi huaa hai driver ko Boht kharab service hai,swiggy,playstore,1,negative,negative,none,none,none,none,none,none,no,Shreya
+FD0968,chiiii.. ghatiya serivice. raat hote hi surge laga dete hein kitna zada.,blinkit,playstore,1,negative,none,none,none,none,none,negative,none,no,Shreya
+FD0971,sausage ache se nahi lagate h burger ke andar aaj 9 vi baar jara hu ..,burgerking,playstore,4,negative,none,negative,none,none,none,none,none,no,Shreya
+FD0988,store manager behaviour is not good bahut badtameej hain,dominos,playstore,1,negative,none,none,none,none,none,none,none,no,Shreya
+FD0995,Travaler balo ka beta dhaba ruko sabhi driver bhai,gmaps,gmaps,5,positive,none,none,none,none,none,none,none,no,Shreya
+FD0996,"big basket Handling charges laga kar dete hai fir bhi Products hath mai se kar jate hai to yah handling charges kyu fir, ya delivery charge lo fir aap log! thank you ! delivery walon ko itna Kam pesa milta hai or aap log 10 - 15 min Mai product pahuchane ki hod mai unki life ke sath khel rahe ho!",bigbasket,playstore,2,negative,none,none,none,none,none,negative,none,no,Shreya
+FD1008,do din baad order recieved ki date dete hai or baad me fir order us din cancel kr dete h har baar yahi krte h pehle thik tha do ghnte me aa jata tha,bigbasket,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shreya
+FD1012,Chilli paneer hi badiya hai bas baki to sab aise hi hai,gmaps,gmaps,5,neutral,none,neutral,none,none,none,none,none,no,Shreya
+FD1017,Oder aaya nhi lekin Acha Bhabhar 👍🏼,eatsure,playstore,4,neutral,negative,none,none,positive,none,none,none,no,Shreya
+FD1022,mujhe bola gaya tha ki aap ka 150 ka gift 26 July ko expire huga aur mera gift 7 July ko hi mainas kar diya aur mene kuch order bhi nhi kiya,bigbasket,playstore,1,negative,none,none,none,none,none,negative,none,no,Shreya
+FD1025,bhut bada fake app h mera Paisa waste hogya ...mene order Kiya na delivery mili na Paisa.. service centre me call recieve nhi karte koi help nhi cheat karre h ye log....bad experience👎,wowmomo,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shreya
+FD1032,bahut achha khana aur sasta bhi,magicpin,playstore,4,positive,none,positive,none,none,none,positive,none,no,Shreya
+FD1042,Sb ka sb bekaar h na khaye kripaya. Or staff ko bolne ka bilkul tamij nahi hai,gmaps,gmaps,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD1048,Malik bahut hi achha h staff ka bhi nature acha hai thank u dubey jiiii,gmaps,gmaps,5,positive,none,none,none,none,none,none,none,no,Shreya
+FD1056,Bakwas mixvage roti thandi wether sarvis bakwas not visited again,gmaps,gmaps,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD1063,"its service is very bad, mene ek pendrive order kiya tha or wo khrab nikla but iska inhone koi solution nahi kiya mera paisa brbad gya, don't use",blinkit,playstore,1,negative,none,negative,none,none,none,none,negative,no,Shreya
+FD1064,inke agent kabhi bhi support nahin karte Mera order 50 minut delay karai unhone,zomato,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shreya
+FD1071,"Bakwas biryani , packaging ko chhodkar taste par bhi dhyan dijiye , mere 380 rupees aise hi chale gye 😢",gmaps,gmaps,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD1089,total fharzi hai sab 30 mit promiss to ese karege or 1 ghante bad delivery dege sab scam krne ko lage h kabhi bolege kapil aa raha abhi deepak aa raha hai,dominos,playstore,1,negative,negative,none,none,none,none,none,none,no,Shreya
+FD1091,393rs ka order tha 422rs liya chor,swiggy,playstore,2,negative,none,none,none,none,none,negative,none,no,Shreya
+FD1092,Kya rosted tha yrr maza aa gya,gmaps,gmaps,5,positive,none,positive,none,none,none,none,none,no,Shreya
+FD1112,Zero star ka option nhi tha nhi tohh wo bhi minus ma dete.... order krne ka bd order hi nhi dikhta hai paladium mall ka bezzzati Krra naa order diya na kuch payment already paid tha,wowmomo,playstore,1,negative,negative,none,none,none,negative,none,none,no,Shreya
+FD1120,Very poor service Pyaj Rakh diye Hain aankh mein lag Raha Hai,gmaps,gmaps,1,negative,none,none,none,none,none,none,none,no,Shreya
+FD1127,bahot mahanga milta hai. very expensive foods,swiggy,playstore,2,negative,none,none,none,none,none,negative,none,no,Shreya
+FD1128,jo mein order kiya woh mujhe mila nahi.. customer support 👎🏻 ZOMATO 👎🏻,zomato,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shreya
+FD1129,faltu bekar Hai Paisa Lekar khana deliver nahin karta hai... don't oder the aap,wowmomo,playstore,1,negative,negative,none,none,none,none,none,none,no,Shreya
+FD1132,Naam ka hai emergency me raat me agr aapko kahi khana nhi mil raha hai to aap yha khaa sakte hai,gmaps,gmaps,2,neutral,none,none,none,none,none,none,none,no,Shreya
+FD1136,sabse faltu app 2 se 3 gante lagata he delivery ko aur fir bhi nahi phochta aur app time sirf badte rehta he pik up tak aur delivery pick hone ke baad 1 min bolke 1 ganta lagata he aur map me movement kuch nahi hota aur movement hua to route change karte rehta he faltu app he😡😡😡😡😡😡,eatsure,playstore,1,negative,negative,none,none,none,negative,none,none,no,Shreya
+FD1156,product muje kuch kuch tute huee mile hai 🤢❤️‍🩹💔,blinkit,playstore,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD1159,Aaj dusri bar item missing product parapet hua ye one star ke kabil nahi hai,blinkit,playstore,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD1160,bakwaas app hai yeh isme kuch bhi order karne jao toh cost dekh kr finger order mein touch nhi hota hai gajab hai yaar yeh app 🤔,kfc,playstore,1,negative,none,none,none,none,negative,none,none,yes,Shreya
+FD1164,Pathetic Service. order kuch karo sale pahunchate kuch or hain.,kfc,playstore,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD1166,momo ❌ maida ✅ staffing ekadam bakwas hai,wowmomo,playstore,1,negative,none,negative,none,none,none,none,none,no,Shreya
+FD1184,bhot bekar app h jab order le he nhi sakta h to ku bnaya h app 🤬🤬🤬🤬 bhot bekar h koi mat use Karo ya app order kar rha hu kuch be currently available a rha h kabi be order nhi ho rha h mat use Karo app 🤬🤬🤬🤬,blinkit,playstore,1,negative,none,none,none,none,negative,none,none,no,Shreya
+FD1189,jab me rajnandgaon me thi tab ye app achha chalta tha.. or khana bhi achha aata hai but abhi me bastar aayi hu or jo bhi order kiya hai sab bekaar aaya hai or ek toh kisi or ko deliver krke refund bhi ni diya 😠.. kisi ko bhi de kr mera nuksan kiya.. soo bad..,zomato,playstore,1,negative,none,negative,none,negative,none,none,negative,no,Shreya
+FD1204,mane chicken popcorn oder Kiya tha jisme chicken bs 2 pice tha or baki kurkura tha medium oder Kiya tha mane but I think ki mujhe regular bhi recieve nhi hua,swiggy,playstore,1,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1207,ye saale order hi raste me gatab kar dete hain order hi delevery nhi krte froud hai sab,blinkit,playstore,1,negative,none,none,none,negative,none,none,none,no,Shyam
+FD1208,bakwas hai burger tehas nehas huya huya tha very bad experience,mcdonalds,playstore,1,negative,none,none,negative,none,none,none,none,no,Shyam
+FD1214,thk tha but utna aacha ni tha,swiggy,playstore,2,neutral,none,none,none,none,none,none,none,no,Shyam
+FD1217,delivery charge leta hai tum log bery bad,blinkit,playstore,2,negative,none,none,none,none,none,negative,none,no,Shyam
+FD1218,"very nice food ,Chiggy or tomato se kahi jyada achha khana",eatsure,playstore,5,positive,none,positive,none,none,none,none,none,no,Shyam
+FD1232,sabse ghatiya delivery app Hai yah magicpin isse jyada ghatiya delivery app aur kuchh Ho nahin Sakta,magicpin,playstore,1,negative,none,none,none,none,none,none,none,no,Shyam
+FD1235,bhot bekar service h mne 1 ghanta wait Kiya order ka or order cancel ho gya,burgerking,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shyam
+FD1240,very bad experience burger ekadam Thanda tikki bhi thandi Maha bakwas burger isase achcha burger Maine ready walon ka khaya hai lekin isase ganda burger jindagi mein kabhi nahin khaya,magicpin,playstore,1,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1241,land ka ball order accept nhi karta h.,swiggy,playstore,1,negative,none,none,none,none,none,none,none,no,Shyam
+FD1262,payment leke order nhi dete kye baar complain kar dii,wowmomo,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shyam
+FD1286,itna badtamiz driver tha tu tadak karke baat kar rha tha aur nakhre alag dikha rha tha lane me sman,blinkit,playstore,1,negative,none,none,none,negative,none,none,none,no,Shyam
+FD1288,KFC ka order kabhi bhi time se deliver nahin hota Hai,kfc,playstore,1,negative,negative,none,none,none,none,none,none,no,Shyam
+FD1290,local quality ke item aate hai or refund bhi nahin milta,zomato,playstore,1,negative,none,negative,none,none,none,none,negative,no,Shyam
+FD1299,totally bikar app hai first order accept karte hain then Uske bad delivery Mein yishu Dekhe aapka order cancel Karke 20 40 charges cut Karte Hai,blinkit,playstore,1,negative,none,none,none,none,none,none,negative,no,Shyam
+FD1301,ghatiya experience order kabhi time pe leke nhi aate aur na hi cancel hone pe refund dete hai,magicpin,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shyam
+FD1303,"jo timming application me show hota hai uska 2,3 guna time lgta hai ya fir 4,5 time more",zepto,playstore,3,negative,negative,none,none,none,none,none,none,no,Shyam
+FD1313,meri city me (Tikamgarh Madhya Pradesh) blinkit app chalu kro tabhi app download krungi or shopping karungi yese faltu me meri feed me mat aaya karo phle meri city me aao,blinkit,playstore,1,negative,none,none,none,none,none,none,none,no,Shyam
+FD1318,jo rate me bataya jata use order karte same uska rate jayda kar diya jata hai,dominos,playstore,2,negative,none,none,none,none,none,negative,none,no,Shyam
+FD1328,bekar app hai ye zomato karlo best app hai zomato ye sale call karne ko bolo to chat closed kar dete hai 10 15 baar ho chuka hai Swiggy food delivery mein 0 hai,swiggy,playstore,1,negative,none,none,none,none,none,none,negative,no,Shyam
+FD1338,"naam bade aur darshan chote. ye surge fee ki kya loot hai. Aur jitna kam food price main kiya hai utna hi taxes mai bada diya 3km ke kon ₹84 dega .🤬🤬 ₹27 packing fee. bewakoof samajh rahkha hai. jo cheez zomato pe final payment ke time pr 250 ki hai inke ""magical taxes"" se vo 330 ki mil rahi hai. waah bete.",magicpin,playstore,1,negative,none,none,none,none,none,negative,none,yes,Shyam
+FD1352,delivery charge bhut jyada h or khana bhi mehanga h isse bhadiya to khi bhar Jake khalo vo thik h,zomato,playstore,5,negative,none,none,none,none,none,negative,none,no,Shyam
+FD1357,worst application hai 3 month ka subscription liya hai delivery with in 7 km free hai to delivery tip ka charge add kar diya bill me to free kaise huyi delivery,swiggy,playstore,1,negative,none,none,none,none,none,negative,none,no,Shyam
+FD1361,ghanta aaj bhi order wahi mila thanda aur taste bhi 2 kaudi ka is mamle me MacDonald best hai tum nahi,burgerking,playstore,1,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1362,plz help me mere magic pin me total saving 182 dikha raha hai lekin vo wallet me transfer nahi ho pa raha hai wallet per red color ka mark aa raha hai plz help me kaese points ko transfer kare magic pin wallet me,magicpin,playstore,2,negative,none,none,none,none,negative,negative,none,no,Shyam
+FD1365,jitna dikhta hain wo hain nahi,blinkit,playstore,3,negative,none,none,none,none,none,none,none,no,Shyam
+FD1369,bhai ek sause ke pouch se kya hota hai kam se kam 2 pouch toh dene chaiye baki burger tasty tha,magicpin,playstore,3,negative,none,neutral,none,none,none,none,none,no,Shyam
+FD1371,Maja agya . Shandaar khana ipl k sath,gmaps,gmaps,5,positive,none,positive,none,none,none,none,none,no,Shyam
+FD1373,my friend refer cod nahi show ho Raha hai,zepto,playstore,2,negative,none,none,none,none,negative,negative,none,no,Shyam
+FD1375,pehle jaisa 30 mnt order nhi rha,dominos,playstore,3,negative,negative,none,none,none,none,none,none,no,Shyam
+FD1376,bhot bekar hai bigbasket rakha hua saman dete hai bekar bekar koi bhi order mat karna Bigbasket se bhot bekar hai ye,bigbasket,playstore,1,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1381,"pahele sab available hota tha, ab jo item dekh lo kuch avaupable nahi hota, bekaar hi gyi big basket",bigbasket,playstore,2,negative,none,none,none,none,none,none,none,no,Shyam
+FD1388,Maine suna hai ye aao bhut accha hai or sangamner mai iski koi brach nhi hai iam very apset sagamner bhi zepto ki brach kholo please 🥺,zepto,playstore,2,neutral,none,none,none,none,none,none,none,no,Shyam
+FD1400,pathetic fui laga hua समान dete hai कहते hai fenk dijiye refund aa jayega aur return daalte hai? saman फेंकने k bad kaisa return 1 star bhi isliye kyunki 0 star ka option nahi hai,blinkit,playstore,1,negative,none,negative,none,none,none,none,negative,no,Shyam
+FD1411,beaker app hai charges bahut leta hai na delivery partner ko utna paise deta hai na customer ko saste me khana,swiggy,playstore,1,negative,none,none,none,none,none,negative,none,no,Shyam
+FD1433,very bad app money west karna hai kuch buy 1 get 1 offer frod,eatsure,playstore,1,negative,none,none,none,none,none,negative,none,no,Shyam
+FD1434,very good etane rat be aap customer care karte,blinkit,playstore,5,positive,none,none,none,none,none,none,positive,no,Shyam
+FD1438,nice app delivery bhi improve hui h but Mera new account h coupon dikha raha h but apply nhi ho raha h please solve my problem,bigbasket,playstore,2,negative,positive,none,none,none,negative,negative,none,no,Shyam
+FD1441,delivery bahut let hota hai or kabhi kabhi to order ke bad shop close dikhata hai or delivery 1 ghante ke bad aata hai,dominos,playstore,2,negative,negative,none,none,none,none,none,none,no,Shyam
+FD1451,May hamesha burger king download karti prr yeh hamesha yhi dekhata ki high demand hai app thorri darr wait kariye frr may thorri darr baad jatti tb bhi yhi dekha very bad experience 👎🏻,burgerking,playstore,1,negative,none,none,none,none,negative,none,none,no,Shyam
+FD1467,meri mummy k mobile se order Kiya tha delivery partner ne fake delivery attempt kiya hume parcel abhi tak nhi mila worst customer services hai koi reply nhi hai aaj 3 din hogya hai,bigbasket,playstore,1,negative,none,none,none,negative,none,none,negative,no,Shyam
+FD1474,nice... india ke kam padhe likhe youth isi bahane kaam kar ke paisa kama rahe hai.,blinkit,playstore,3,positive,none,none,none,none,none,none,none,no,Shyam
+FD1475,service thik thak h swad jayda badhiya ni h bus kaam chlau h,zomato,playstore,3,neutral,none,negative,none,none,none,none,none,no,Shyam
+FD1478,bhut hi ghtiya app hai ye mene order cancel Kiya tha but mere pese kbhi return nhi huye ye ratan tata ji ka nam khrab kr rhe hai,bigbasket,playstore,1,negative,none,none,none,none,none,none,negative,no,Shyam
+FD1480,Good but raat ko bhi service do yaar hisar haryana mai,mcdonalds,playstore,4,neutral,none,none,none,none,none,none,none,no,Shyam
+FD1483,bina Karan meri cash on delivery band kar rakhi hai ye acchi bat nahi hai mere pass phone pay ya aur koi vikalp nhi hai isliye ab mai order nhi kar sakti it's very bad,zomato,playstore,2,negative,none,none,none,none,negative,none,none,no,Shyam
+FD1489,order online kiya tha upi se payment kiya tha lekin order lekar nahin aaya,kfc,playstore,1,negative,negative,none,none,none,none,none,none,no,Shyam
+FD1492,mere yaha ki delivery place ni hai,dominos,playstore,2,neutral,none,none,none,none,none,none,none,no,Shyam
+FD1506,Zomato se sari chij acchi hoti hai,zomato,playstore,1,positive,none,none,none,none,none,none,none,no,Shyam
+FD1508,very bad app this app gave very bad product bahut hi kharab rahta hai jo dikhta hai aise nhi le aate hai,dominos,playstore,1,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1512,mera order nhi delivery hua train me sawai madhopur aur order ka refund nhi de rahe hai aaplog yahi service hai apka refund kariye mera paisa.,swiggy,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shyam
+FD1526,bhot kharab app h ise mtt download kare plz 🫴🏻🙏🏿,bigbasket,playstore,1,negative,none,none,none,none,none,none,none,no,Shyam
+FD1532,Maine ek Energy Drink ki bottle order Kari but woh expire product tha Maine ek Levon ki choti bottle order Kari thi us per accha discount tha but woh bhi expire 😡😡,zepto,playstore,2,negative,none,negative,none,none,none,positive,none,no,Shyam
+FD1536,jab saare jagah ki location collect kr lena tab burger bechana 🙏,burgerking,playstore,1,negative,none,none,none,none,none,none,none,no,Shyam
+FD1548,order dena hai toh subah do aur sham tak wait karo tab orders aayega apka worst delivery experience,magicpin,playstore,1,negative,negative,none,none,none,none,none,none,no,Shyam
+FD1565,jo bhi mangao us par gandagi hamesha rehti hai hygeine maintain karo,blinkit,playstore,2,negative,none,none,negative,none,none,none,none,no,Shyam
+FD1573,verify ka option nahi aa raha hai kiya karu,magicpin,playstore,4,negative,none,none,none,none,negative,none,none,no,Shyam
+FD1588,support kabhi bhi problem solve nahi karta hai order karne se bina location mai arrived hokar bina phone calls ke order cancel karta hai bakwas app hai Bigbasket chi thu🤮🤮🤮 Flipkart blinkit best hai,bigbasket,playstore,1,negative,none,none,none,negative,none,none,negative,no,Shyam
+FD1591,bekar food h. bilkul iska bekar bilkul oily customer not satisfied,kfc,playstore,1,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1598,ghatiya app h baar baar price fluctuate hote h chizo k add to cart krne k baad ye price bada dete h har chiz m 2 ya 3 rupees ye koi tarika nahi hota,bigbasket,playstore,1,negative,none,none,none,none,none,negative,none,no,Shyam
+FD1611,bakwas hai yhe app cancel Karney par be refund nhi diya complent Karo sab milkey ban this app isey Acha zomoto swingy hai I have complent Cort agr app ney respons nhi diya thoo,eatsure,playstore,1,negative,none,none,none,none,none,none,negative,no,Shyam
+FD1615,Jo bhi khana banvaiye lalit chef se banvaiye khana bahut achha banata hai mali soya chap bahut hi achha tha aaj kal lalit chef bahut chaccha bana rahe nice 👍,gmaps,gmaps,5,positive,none,positive,none,none,none,none,none,no,Shyam
+FD1626,cash delivery dena chahiye baaki sab very good,blinkit,playstore,1,neutral,none,none,none,none,negative,none,none,no,Shyam
+FD1632,"ek dam 3rd class service hai inki , itna payment late hai sath me ek bag bhi nahi dete , fir wo Ghar le jate tak log dekhte hai Kitna kharab feel hota hai ...",dominos,playstore,1,negative,none,none,negative,none,none,none,none,no,Shyam
+FD1654,bakwas ek number ghatiya app time delivery kabhi nahin Hot order karo to 1 ghante bad aata Hai 😡😡😡😡😡,zepto,playstore,2,negative,negative,none,none,none,none,none,none,no,Shyam
+FD1659,khali ek hi baar cash on delivery aati hai fir dubara nahi aati,zomato,playstore,1,negative,none,none,none,none,negative,none,none,no,Shyam
+FD1667,"99 ka biryani 190 kaise ho gaya, even delivery charges were free, even first time users ko bhi 29 ka burger 109 me , kya calculation hai magicpin ki.",magicpin,playstore,2,negative,none,none,none,none,none,negative,none,no,Shyam
+FD1676,very bed service hai item missing koi sunavai nahi hai kahi par,zepto,playstore,1,negative,none,negative,none,none,none,none,negative,no,Shyam
+FD1678,Biryani me baal nikal rha hai..vry bad service,gmaps,gmaps,1,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1683,i humble request please don't use this app mere khana 2 hours tk nhi or delivery boy abhi tk nhi aaya or gaaliya de rha h or costumer contact support to hota hi nhi,eatsure,playstore,1,negative,negative,none,none,negative,none,none,negative,no,Shyam
+FD1687,quantity jo hai vo packing mai nhi hai maine weight kiya hai,zepto,playstore,2,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1689,kahi bhi deliver ho jata trust bhi nhi kiya ja skta,bigbasket,playstore,1,negative,none,none,none,negative,none,none,none,no,Shyam
+FD1690,Bahut hi kharab service. Order samay par deliver nahi hua aur customer care se bhi proper support nahi mila. Delivery aur customer service dono se main bahut disappointed hoon. Overall experience bahut bekar raha.,blinkit,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shyam
+FD1698,mu first time 😂 khane ke baad bolu ga kaisa hai pizza 🍕,dominos,playstore,1,neutral,none,none,none,none,none,none,none,no,Shyam
+FD1699,too much charge taking ..majboori hai kya kare,zomato,playstore,1,negative,none,none,none,none,none,negative,none,no,Shyam
+FD1700,"Kya hi aap h.., 10 baar login kar liya.., ""one last question what we call you"" isse aage process hi nai ho rha.., refresh karo toh screen hi gayab.",burgerking,playstore,2,negative,none,none,none,none,negative,none,none,no,Shyam
+FD1705,"Ekdum tasteless biryani milti hai , veg nonveg dono me hi kuch taste nhi hai",gmaps,gmaps,1,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1707,wahi product rakhe jo apko coumpany ko bhi faida de. maine ice cream li thi crembell ki bilkul melty aur taste bhi ajeeb sa tha..,zepto,playstore,2,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1713,pizza garm nhi tha.. thanda h.. maja nhi aaya khane me.,dominos,playstore,2,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1715,fraud application... last 10 din se order khud cancel ho raha hai.. items on the way dekhata hai.. but last mei cancel ho jata hai.. mera paisa fas gaya hai... customer support ka number nehi hai... please don't use this app.,bigbasket,playstore,1,negative,none,none,none,none,none,none,negative,no,Shyam
+FD1724,achi quality nhi milti test nhi ata,zomato,playstore,1,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1735,Service zero. If anybody is drunk pr apne sense mai hai to khana to doo.. aukat bhul gye hain apni jab pratha bechte the,gmaps,gmaps,1,negative,none,none,none,none,none,none,none,no,Shyam
+FD1742,very bad experience with dominos order cancel karo to refund milega yaa nhi pakka nhi h ye khud unki worker ka bolna h ase thodi hota h its very bad .,dominos,playstore,1,negative,none,none,none,none,none,none,negative,no,Shyam
+FD1746,bahut hi bekar khana tha waste of money,eatsure,playstore,1,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1747,Jitni baar bhi mangayaa..utni bar ek naya experience mila haii..😂 Nayi nayii pblms dekhne ko milti hai har order ke sath!!,blinkit,playstore,1,negative,none,none,none,none,none,none,none,no,Shyam
+FD1757,Acha hai aap bat time ka pata nahi,zomato,playstore,4,negative,negative,none,none,none,none,none,none,no,Shyam
+FD1768,this is my first experience delivery boy delivery charge mang rha tha free delivery hone k bad bhi or jo order kiya tha uski soaus m badbu a rahi thi bt esa kabhi kabhi ho jaata h apki koi glti nahi h keep it up,magicpin,playstore,2,neutral,none,negative,none,negative,none,none,none,no,Shyam
+FD1773,Bhai dekho koi order maat karna iss aap se 3 hrs hogaya hai order nhi aaya hai fake aap hai pura Paisa pura Pani main chala gaya. Call ye log pick nhi karta hai . Maat order karna koi bhi,wowmomo,playstore,1,negative,negative,none,none,none,none,none,negative,no,Shyam
+FD1779,ismein Saman to achcha hota hai but sab kuchh thoda mahanga lagta hai mujhe to instamart per thoda sasta rahata hai voh to instamart Abhi Saman available nahin Hai iski vajah Se mujhe blinkit karna pad raha hai,blinkit,playstore,3,negative,none,positive,none,none,none,negative,none,no,Shyam
+FD1780,why you charged handling fees or wo bhi 20 rupees,zepto,playstore,1,negative,none,none,none,none,none,negative,none,no,Shyam
+FD1802,jyada Se jyada discount aur scheme ke sath saman do acche offer do aur badhiya se badhiya coupon do ekadam market se sasta saman do,zepto,playstore,2,neutral,none,none,none,none,none,negative,none,no,Shyam
+FD1804,"battamij log,,ek ghante me delivery denge aur customer se bat krne ka tarika nahi hai,,,upar se ulti sidhi bat krte hain,,,jise order lena bhi hoga wo inki bhasa sun ke kabhi service ni lega...",swiggy,playstore,1,negative,negative,none,none,negative,none,none,none,no,Shyam
+FD1806,bhut bakwas hai order delivered ki jagah take away ho gyaa wo order bhi maine nhi liya kisi aur ne liya tha aur refund nhi kr rhe guys take action in bewkoof aur ghatiya logo se lena band kr do akal thikane aa jayegi isse acha ek streat food kha lo best hai ye sab chor hai bsss,burgerking,playstore,1,negative,none,none,none,negative,none,none,negative,no,Shyam
+FD1808,isse acha to khar ki roti kha lo bhai 🤮,dominos,playstore,1,negative,none,negative,none,none,none,none,none,no,Shyam
+FD1809,Bhai App b To bahut acchi hai mujhe to bahut acchi lagi logon Ka Pata na,eatsure,playstore,5,positive,none,none,none,none,none,none,none,no,Shyam
+FD1810,mene apni payment app me pay krdi fr bhi custom care n mera account — kr dia bohat ganda experience rha,bigbasket,playstore,1,negative,none,none,none,none,none,none,negative,no,Shyam
+FD1812,service achi nhi h rajendra nagar indore wale kfc ki parcel deliver hi nhi hua or bta rha tha ki deliver ho gya or refund bhi nhi kiya bhot bekar h,kfc,playstore,1,negative,none,none,none,negative,none,none,negative,no,Shyam
+FD1815,Offers kabhi direct apply nhi krte h 🙄,zomato,playstore,1,negative,none,none,none,none,negative,negative,none,no,Shyam
+FD1822,"Ghatiya app hai..bolte hai 10 mins main delivery hoga but subha se sham ho jata hai order deliver nei hota...Aur bina reason ke hi order cancelled ho jata hai...isse bahtar toh zepto,blinkit,instamart hai vaai..",bigbasket,playstore,2,negative,negative,none,none,none,none,none,negative,no,Shyam
+FD1825,Paise cut ho gya par order place nhi hota hai kabhi kabhi,blinkit,playstore,2,negative,none,none,none,none,negative,none,none,no,Shyam
+FD1829,bekar aap hai is se mst to zomato hai zero star hota to vhi deta ....,swiggy,playstore,1,negative,none,none,none,none,none,none,none,no,Shyam
+FD1831,iske bhai pizza centre wale to Bhai call uthate hi nahin hai,dominos,playstore,2,negative,none,none,none,none,none,none,negative,no,Shyam
+FD1839,time ke pakka nahi hain chor h sab,zomato,playstore,1,negative,negative,none,none,none,none,none,none,no,Shyam
+FD1843,Yaha ka sab kuch bhot badhiya hai or sarvice bhi achi haiii aap sab long bhi aaiye or enjoy kariye yaha ki mutton biryani sabse best haiii okaa chalta hu maii zing zing,gmaps,gmaps,5,positive,none,positive,none,none,none,none,none,no,Shyam
+FD1855,khane ka taste bahut kharab tha waste off money,eatsure,playstore,1,negative,none,negative,none,none,none,none,none,no,Shyam

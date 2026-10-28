@@ -1,0 +1,90 @@
+{
+  "overall": {
+    "C": 4,
+    "val_macro_f1": 0.755,
+    "test_macro_f1": 0.6705,
+    "test_accuracy": 0.8592,
+    "test_f1_per_class": {
+      "negative": 0.9278,
+      "neutral": 0.4615,
+      "positive": 0.6222
+    }
+  },
+  "overall_majority_class": {
+    "test_macro_f1": 0.3039,
+    "test_accuracy": 0.8375
+  },
+  "aspects": {
+    "delivery_time": {
+      "C": 4,
+      "test_detection_f1": 0.7049,
+      "test_sentiment_macro_f1": 0.5336,
+      "test_support": {
+        "none": 214,
+        "negative": 59,
+        "positive": 4
+      }
+    },
+    "food_quality": {
+      "C": 16,
+      "test_detection_f1": 0.7353,
+      "test_sentiment_macro_f1": 0.6577,
+      "test_support": {
+        "none": 205,
+        "negative": 59,
+        "positive": 13
+      }
+    },
+    "packaging": {
+      "C": 1,
+      "test_detection_f1": 0.2222,
+      "test_sentiment_macro_f1": 0.6047,
+      "test_support": {
+        "none": 269,
+        "negative": 8
+      }
+    },
+    "delivery_partner": {
+      "C": 16,
+      "test_detection_f1": 0.5455,
+      "test_sentiment_macro_f1": 0.5063,
+      "test_support": {
+        "none": 252,
+        "negative": 24,
+        "positive": 1
+      }
+    },
+    "app_experience": {
+      "C": 1,
+      "test_detection_f1": 0.5921,
+      "test_sentiment_macro_f1": 0.5373,
+      "test_support": {
+        "none": 208,
+        "negative": 67,
+        "positive": 2
+      }
+    },
+    "price_offers": {
+      "C": 16,
+      "test_detection_f1": 0.7216,
+      "test_sentiment_macro_f1": 0.7776,
+      "test_support": {
+        "none": 224,
+        "negative": 49,
+        "positive": 4
+      }
+    },
+    "refund_support": {
+      "C": 1,
+      "test_detection_f1": 0.8741,
+      "test_sentiment_macro_f1": 0.6084,
+      "test_support": {
+        "none": 211,
+        "negative": 65,
+        "positive": 1
+      }
+    }
+  },
+  "aspect_detection_f1_avg": 0.628,
+  "aspect_sentiment_macro_f1_avg": 0.6037
+}

@@ -1,0 +1,11 @@
+model,overall_macro_f1,overall_accuracy,positive_f1,aspect_detection_f1,aspect_sentiment_f1
+Always 'negative' (majority class),0.3039,0.8375,0.0,,
+TF-IDF + Logistic Regression,0.6369,0.8628,0.5641,0.6454,0.5954
+TF-IDF + Logistic Regression (dataset v2),0.6705,0.8592,0.6222,0.628,0.6037
+HingRoBERTa - dataset v1 (Colab T4),0.8005,0.9278,0.7778,0.7209,0.664
+HingRoBERTa - dataset v1 (laptop GPU),0.7718,0.917,0.75,0.7107,0.6816
+HingRoBERTa - dataset v2 (laptop GPU),0.817,0.9206,0.8,0.7061,0.6873
+mBERT,0.6351,0.8628,0.4324,0.6285,0.5642
+"MuRIL (float32, lr 5e-5, 10 epochs)",0.4864,0.8628,0.5333,0.1268,0.3872
+"MuRIL (float16, did not converge)",0.3039,0.8375,0.0,0.1123,0.3639
+XLM-RoBERTa,0.5984,0.87,0.55,0.5857,0.566

@@ -1,0 +1,16 @@
+Source: sentio_dataset_v1.csv  (1844 rows)   seed=42
+
+split   rows   neg   neu   pos
+train   1290  1081   114    95
+val      277   232    24    21
+test     277   232    25    20
+
+Aspect mentions (non-'none') per split:
+aspect              train   val  test
+delivery_time         264    40    63
+food_quality          366    74    72
+packaging              37     7     8
+delivery_partner      102    23    25
+app_experience        359    68    69
+price_offers          267    75    53
+refund_support        300    60    66

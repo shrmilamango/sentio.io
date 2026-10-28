@@ -1,0 +1,43 @@
+COLLECTION FUNNEL
+==================================================
+0. merged                                 103158
+1. non-empty                              100417
+2. PII removed                            100416
+3. 6-60 words                              47448
+4. deduplicated                            47377
+5. code-mixed (>=20% Hindi)                 1857
+6. capped per app                           1857
+
+Final: 1857 reviews
+
+By source:
+source
+playstore    1739
+gmaps         118
+
+By app:
+app_name
+zepto         260
+blinkit       228
+dominos       224
+bigbasket     195
+swiggy        185
+zomato        178
+magicpin      176
+gmaps         118
+eatsure       107
+burgerking     86
+kfc            46
+wowmomo        38
+mcdonalds      16
+
+By star:
+star_rating
+1    1078
+2     409
+3     184
+4      79
+5     107
+
+Mean Hindi ratio: 0.33
+Mean length: 19.8 words

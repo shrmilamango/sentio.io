@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-paper text-ink font-sans antialiased; font-size: 17px; line-height: 1.6; }
+  h1, h2, h3 { @apply font-serif font-normal; line-height: 1.12; letter-spacing: -0.01em; }
+  ::selection { background: #FCF1D2; }
+  :focus-visible { outline: 2px solid #1F2A5C; outline-offset: 3px; border-radius: 6px; }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink px-5 py-2.5 font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed; }
+  .btn-primary { @apply btn bg-haldi text-ink hover:bg-haldi-deep; }
+  .btn-quiet { @apply btn border-line bg-transparent hover:border-ink; }
+  .field { @apply w-full rounded-xl border border-line bg-white px-4 py-3 text-ink placeholder:text-muted/70 focus:border-indigo focus:outline-none; }
+  .wrap { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+}
+
+/* underline used for aspect phrases: follows every line when a phrase wraps */
+.mark {
+  text-decoration-line: underline; text-decoration-color: var(--mark);
+  text-decoration-thickness: max(3px, 0.07em); text-underline-offset: 0.16em;
+  text-decoration-skip-ink: none;
+}
+.mark-pos { --mark: #2F7D4F; }
+.mark-neg { --mark: #C8412E; }
+.mark-neu { --mark: #8A8F98; }
+.draw .mark { text-decoration-color: transparent; animation: ink 0.6s ease-out forwards; animation-delay: var(--d, 0s); }
+@keyframes ink { to { text-decoration-color: var(--mark); } }
+.fade-in { opacity: 0; animation: fade 0.5s ease-out forwards; }
+@keyframes fade { to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .draw .mark { animation: none; text-decoration-color: var(--mark); }
+  .fade-in { animation: none; opacity: 1; }
+  html { scroll-behavior: auto; }
+}

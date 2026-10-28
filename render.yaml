@@ -1,0 +1,26 @@
+# Render Blueprint: New -> Blueprint -> pick this repo. Creates the backend on the free plan.
+services:
+  - type: web
+    name: sentio-api
+    runtime: python
+    plan: free
+    rootDir: api
+    buildCommand: pip install -r requirements.txt
+    # --proxy-headers: read the visitor's real IP from Render's proxy (used by the rate limits)
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips "*"
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: DATABASE_URL          # Neon connection string (paste in the Render dashboard)
+        sync: false
+      - key: JWT_SECRET            # Render generates a random one
+        generateValue: true
+      - key: USE_FAKE_MODEL
+        value: "False"
+      - key: ML_SERVICE_URL        # your ngrok address, e.g. https://xxxx.ngrok-free.app
+        sync: false
+      - key: ML_SERVICE_TOKEN      # same long random value you set before starting ML/serve.py
+        sync: false
+      - key: FRONTEND_ORIGINS      # your Vercel address, e.g. https://sentio.vercel.app
+        sync: false

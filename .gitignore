@@ -1,0 +1,93 @@
+# ============================================================
+# Sentio.io — files that must never go to GitHub
+# Rule of thumb: secrets, personal data, big model files and
+# anything your own machine can rebuild stay out.
+# ============================================================
+
+# ---------- Secrets ----------
+# Real settings files (database password, JWT secret, model-service token).
+# Share the *.example files instead.
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+# Keys, certificates and service credentials
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+credentials*.json
+client_secret*.json
+service-account*.json
+*-sa.json
+kaggle.json
+token.json
+# ngrok and hosting CLIs keep tokens/project links here
+ngrok.yml
+.ngrok2/
+.vercel/
+.render/
+.netlify/
+
+# ---------- Personal data ----------
+# Raw scraped exports (Google Maps files contain reviewer names)
+Dataset/raw/
+# Database files and dumps (contain users and their reviews)
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.dump
+*.backup
+
+# ---------- Model files (1 GB+, rebuild with ML/train.py) ----------
+ML/models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+*.ckpt
+
+# ---------- Logs and caches ----------
+ML/logs/
+*.log
+logs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+*.egg-info/
+
+# ---------- Environments ----------
+venv/
+.venv/
+env/
+
+# ---------- Frontend ----------
+node_modules/
+frontend/dist/
+.vite/
+npm-debug.log*
+
+# ---------- Archives ----------
+*.zip
+*.tgz
+*.tar.gz
+*.7z
+*.rar
+
+# ---------- Editor and OS ----------
+# Editor settings contain paths specific to this laptop
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp

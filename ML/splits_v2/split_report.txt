@@ -1,0 +1,16 @@
+v2 = v1 (1844) + new (447) = 2291 rows;  3 new rows excluded (UNSURE)
+TEST split frozen = identical to splits_v1/test.csv
+
+split   rows   neg   neu   pos
+train   1669  1137   225   307
+val      345   242    44    59
+test     277   232    25    20
+
+Positive aspect labels in TRAIN (v1 -> v2):
+  delivery_time       17 ->   70
+  food_quality        68 ->  129
+  packaging            2 ->    6
+  delivery_partner     1 ->    8
+  app_experience      21 ->  111
+  price_offers        19 ->   62
+  refund_support       2 ->   10

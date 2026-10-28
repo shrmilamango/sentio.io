@@ -1,0 +1,142 @@
+{
+  "model": "l3cube-pune/hing-roberta",
+  "tag": "hingroberta_local_v1",
+  "args": {
+    "model": "l3cube-pune/hing-roberta",
+    "tag": "hingroberta_local_v1",
+    "splits": "splits_v1",
+    "epochs": 6,
+    "batch": 16,
+    "lr": 3e-05,
+    "max_len": 96,
+    "seed": 42,
+    "no_amp": false
+  },
+  "best_val_score": 0.7363,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 6.4393,
+      "overall_macro_f1": 0.6703,
+      "aspect_detection_f1_avg": 0.5013,
+      "aspect_sentiment_macro_f1_avg": 0.5211,
+      "selection_score": 0.5642
+    },
+    {
+      "epoch": 2,
+      "train_loss": 3.7386,
+      "overall_macro_f1": 0.7883,
+      "aspect_detection_f1_avg": 0.6254,
+      "aspect_sentiment_macro_f1_avg": 0.6166,
+      "selection_score": 0.6768
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.5466,
+      "overall_macro_f1": 0.8241,
+      "aspect_detection_f1_avg": 0.6582,
+      "aspect_sentiment_macro_f1_avg": 0.6596,
+      "selection_score": 0.714
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.8479,
+      "overall_macro_f1": 0.8234,
+      "aspect_detection_f1_avg": 0.6758,
+      "aspect_sentiment_macro_f1_avg": 0.6846,
+      "selection_score": 0.7279
+    },
+    {
+      "epoch": 5,
+      "train_loss": 1.4476,
+      "overall_macro_f1": 0.8272,
+      "aspect_detection_f1_avg": 0.6898,
+      "aspect_sentiment_macro_f1_avg": 0.6844,
+      "selection_score": 0.7338
+    },
+    {
+      "epoch": 6,
+      "train_loss": 1.205,
+      "overall_macro_f1": 0.824,
+      "aspect_detection_f1_avg": 0.6942,
+      "aspect_sentiment_macro_f1_avg": 0.6905,
+      "selection_score": 0.7363
+    }
+  ],
+  "test": {
+    "overall_macro_f1": 0.7718,
+    "overall_accuracy": 0.917,
+    "overall_f1_per_class": {
+      "negative": 0.9655,
+      "neutral": 0.6,
+      "positive": 0.75
+    },
+    "aspects": {
+      "delivery_time": {
+        "detection_f1": 0.864,
+        "sentiment_macro_f1": 0.6884,
+        "support": {
+          "none": 214,
+          "negative": 59,
+          "positive": 4
+        }
+      },
+      "food_quality": {
+        "detection_f1": 0.8456,
+        "sentiment_macro_f1": 0.8518,
+        "support": {
+          "none": 205,
+          "negative": 59,
+          "positive": 13
+        }
+      },
+      "packaging": {
+        "detection_f1": 0.1818,
+        "sentiment_macro_f1": 0.5826,
+        "support": {
+          "none": 269,
+          "negative": 8
+        }
+      },
+      "delivery_partner": {
+        "detection_f1": 0.6667,
+        "sentiment_macro_f1": 0.5519,
+        "support": {
+          "none": 252,
+          "negative": 24,
+          "positive": 1
+        }
+      },
+      "app_experience": {
+        "detection_f1": 0.6769,
+        "sentiment_macro_f1": 0.7483,
+        "support": {
+          "none": 208,
+          "negative": 67,
+          "positive": 2
+        }
+      },
+      "price_offers": {
+        "detection_f1": 0.8544,
+        "sentiment_macro_f1": 0.7345,
+        "support": {
+          "none": 224,
+          "negative": 49,
+          "positive": 4
+        }
+      },
+      "refund_support": {
+        "detection_f1": 0.8855,
+        "sentiment_macro_f1": 0.6138,
+        "support": {
+          "none": 211,
+          "negative": 65,
+          "positive": 1
+        }
+      }
+    },
+    "aspect_detection_f1_avg": 0.7107,
+    "aspect_sentiment_macro_f1_avg": 0.6816,
+    "selection_score": 0.7214
+  }
+}

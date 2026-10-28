@@ -1,0 +1,70 @@
+COHEN'S KAPPA — INTER-ANNOTATOR AGREEMENT
+==========================================================
+Field evaluated       : overall
+Reviews in overlap    : 200
+Fully labelled        : 200
+
+  A – B   0.823   (almost perfect)
+  A – C   0.780   (substantial)
+  B – C   0.881   (almost perfect)
+  ----------------------------------
+  mean    0.828   (almost perfect)
+
+LABEL DISTRIBUTION
+----------------------------------------------------------
+label                A         B         C
+positive            24        21        22
+negative           145       149       146
+neutral             31        30        32
+
+DISAGREEMENTS
+----------------------------------------------------------
+22 of 200 reviews (11%)
+
+FD0005  A=neutral    B=neutral    C=negative 
+        blinkit chor company hai agr payment refund nahi karta hai mare 23/8/2026
+FD0007  A=negative   B=negative   C=neutral  
+        cash payment option nhi aa raha h
+FD0011  A=negative   B=negative   C=neutral  
+        cast payment ka option nahi hai
+FD0019  A=neutral    B=negative   C=negative 
+        average hi app h ye bhi mtlb koi sasta to milta nhi h food isme .. or jayada kch offers 
+FD0024  A=positive   B=neutral    C=neutral  
+        accha hai thik hai useful loading mein time leta hain
+FD0039  A=neutral    B=negative   C=negative 
+        fraud app fraud resturant momo order Kiya thaa 2 plate diya hai 1 plate chat support pe 
+FD0045  A=negative   B=neutral    C=negative 
+        Yah app ekadam faltu Hai jismein click kar rahe ho uska Siva aur sab chij a ja raha hai 
+FD0051  A=positive   B=neutral    C=neutral  
+        accha app but hum itne samaan mangate hai itna mahenga phir bhi is app ne aaj tak hume k
+FD0053  A=neutral    B=negative   C=negative 
+        bhth mehnga khana de rha hai
+FD0056  A=positive   B=neutral    C=positive 
+        accha product delivery hai.. kuch bhi khane ka aa jata hai.,
+FD0071  A=neutral    B=neutral    C=negative 
+        badhaa hi ghatiya hai delivery time pe dete h
+FD0081  A=negative   B=negative   C=neutral  
+        Koii Aisa option bhi hona chahiye jaise ham magicpin ke point apne UPI me convert kare
+FD0095  A=negative   B=neutral    C=neutral  
+        service acha hai but parcel receive karne ke bad jo otp dena padata hai wo ata nahi mobi
+FD0113  A=neutral    B=negative   C=negative 
+        app open hi nahin ho raha hai
+FD0130  A=neutral    B=negative   C=negative 
+        bekar hai bhaia me to toot gaya
+FD0136  A=neutral    B=negative   C=neutral  
+        okay okay pizza yaar tum 100 per achcha dete Hain aur online per thoda achcha nahin aata
+FD0148  A=negative   B=negative   C=neutral  
+        all ok... but' handling charges dene ke baad bhi caring bag nahi dete hai. delivery ke t
+FD0151  A=neutral    B=negative   C=negative 
+        jada price ka khana rahta hai garib admi kha gay
+FD0156  A=negative   B=negative   C=neutral  
+        sab kuch sahi par ek baar order hone ke baad order cancel nahi hota hai kitni bhi proble
+FD0167  A=neutral    B=negative   C=negative 
+        kbhi kbhi shi rahta hai phir inke delevery partner kuch bhi daal dete hain aur saman lat
+FD0197  A=negative   B=neutral    C=neutral  
+        cash back nahi aa raha is liye 3 star
+FD0199  A=negative   B=neutral    C=neutral  
+        cash on delivery ismein nahin ho raha hai mere account mein
+
+Resolve each case together, record the decision as a rule in the
+annotation guidelines, then relabel and re-run this script.
