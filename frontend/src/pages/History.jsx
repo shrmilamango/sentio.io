@@ -55,7 +55,7 @@ export default function History() {
   return (
     <section className="wrap max-w-5xl py-16">
       <h1 className="text-4xl sm:text-5xl">History</h1>
-      <p className="mt-3 text-muted">Every review that has been analysed. Open one to see the full breakdown.</p>
+      <p className="mt-3 text-muted">Every review you have analysed. Open one to see the full breakdown.</p>
 
       <div className="mt-8 inline-flex rounded-full border border-line bg-white p-1" role="group" aria-label="Filter by sentiment">
         {FILTERS.map(([value, label]) => (
