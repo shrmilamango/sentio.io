@@ -15,7 +15,7 @@ from app.auth import (
 from app.config import settings
 from app.database import Base, engine, get_db
 from app.ratelimit import (
-    analyze_limit, client_ip, feedback_limit, login_failures, register_limit, too_many,
+    analyze_limit, batch_limit, client_ip, feedback_limit, login_failures, register_limit, too_many,
 )
 
 log = logging.getLogger("sentio")
@@ -166,17 +166,10 @@ def _model_version_row(db: Session, name: str) -> models.ModelVersion:
     return row
 
 
-@app.post("/v1/analyze", response_model=schemas.AnalyzeResponse)
-def analyze(
-    payload: schemas.AnalyzeRequest,
-    request: Request,
-    db: Session = Depends(get_db),
-    user: models.User | None = Depends(get_optional_user),
-):
-    """Analyze one review with the active model (placeholder or trained).
-    Open to everyone; when logged in, the review is saved to that user's history."""
-    analyze_limit.check_and_hit(f"user:{user.id}" if user else f"ip:{client_ip(request)}")
-    raw = fake_model.predict(payload.text) if settings.use_fake_model else ml_client.predict(payload.text)
+def _store_result(db: Session, text: str, raw: dict, user: models.User | None,
+                  source_app: str | None = None) -> schemas.AnalyzeResponse:
+    """Check one model answer, save it (review, analysis, aspects) and return it.
+    The caller commits."""
     try:
         result = schemas.ModelOutput.model_validate(raw).model_dump()
     except ValidationError as e:
@@ -184,15 +177,15 @@ def analyze(
         raise HTTPException(status_code=502, detail="Model service gave an invalid answer")
     for a in result["aspects"]:      # drop spans that fall outside the text
         sp = a.get("span")
-        if sp and not (len(sp) == 2 and 0 <= sp[0] < sp[1] <= len(payload.text)):
+        if sp and not (len(sp) == 2 and 0 <= sp[0] < sp[1] <= len(text)):
             a["span"] = None
     model_row = _model_version_row(db, result["model_version"])
 
     review = models.Review(
         user_id=user.id if user else None,
-        raw_text=payload.text,
+        raw_text=text,
         normalized_text=result["normalized_text"],
-        source_app=payload.source_app,
+        source_app=source_app,
         lang_distribution=result["language_distribution"],
     )
     db.add(review)
@@ -224,17 +217,53 @@ def analyze(
             span_end=item["span"][1] if item.get("span") else None,
         ))
 
-    db.commit()
-
     return schemas.AnalyzeResponse(
         id=analysis.id,
-        text=payload.text,
+        text=text,
         **{k: result[k] for k in (
             "normalized_text", "polarity", "confidence", "sarcasm",
             "language_distribution", "tokens", "aspects",
             "model_version", "latency_ms",
         )},
     )
+
+
+@app.post("/v1/analyze", response_model=schemas.AnalyzeResponse)
+def analyze(
+    payload: schemas.AnalyzeRequest,
+    request: Request,
+    db: Session = Depends(get_db),
+    user: models.User | None = Depends(get_optional_user),
+):
+    """Analyze one review with the active model (placeholder or trained).
+    Open to everyone; when logged in, the review is saved to that user's history."""
+    analyze_limit.check_and_hit(f"user:{user.id}" if user else f"ip:{client_ip(request)}")
+    raw = fake_model.predict(payload.text) if settings.use_fake_model else ml_client.predict(payload.text)
+    out = _store_result(db, payload.text, raw, user, payload.source_app)
+    db.commit()
+    return out
+
+
+@app.post("/v1/analyze/batch", response_model=schemas.BatchAnalyzeResponse)
+def analyze_batch(
+    payload: schemas.BatchAnalyzeRequest,
+    request: Request,
+    db: Session = Depends(get_db),
+    user: models.User | None = Depends(get_optional_user),
+):
+    """Analyze up to 50 reviews in one go (one call to the model service).
+    Results come back in the same order as the input."""
+    batch_limit.check_and_hit(f"user:{user.id}" if user else f"ip:{client_ip(request)}")
+    texts = payload.texts
+    if settings.use_fake_model:
+        raws = [fake_model.predict(t) for t in texts]
+    else:
+        raws = ml_client.predict_batch(texts)
+    if not isinstance(raws, list) or len(raws) != len(texts):
+        raise HTTPException(status_code=502, detail="Model service gave an invalid answer")
+    results = [_store_result(db, t, raw, user, payload.source_app) for t, raw in zip(texts, raws)]
+    db.commit()
+    return schemas.BatchAnalyzeResponse(results=results)
 
 
 @app.post("/v1/analyses/{analysis_id}/feedback", response_model=schemas.FeedbackOut)

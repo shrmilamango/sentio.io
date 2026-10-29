@@ -4,7 +4,7 @@ import { Feedback } from "./Feedback";
 import { ASPECTS, LANGUAGES, POLARITY, aspectLabel } from "../lib/aspects";
 
 const pct = (x) => `${Math.round(x * 100)}%`;
-const UNSURE_BELOW = 0.7;
+export const UNSURE_BELOW = 0.7;
 
 export function VerdictPill({ polarity, size = "md" }) {
   const p = POLARITY[polarity] ?? POLARITY.neutral;

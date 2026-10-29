@@ -192,3 +192,33 @@ def test_model_service_garbage_gives_502_not_500(client, real_model_mode, monkey
     monkeypatch.setattr(ml_client, "predict", lambda *a, **k: {"unexpected": "shape"})
     r = client.post("/v1/analyze", json={"text": "khana achha tha"})
     assert r.status_code == 502
+
+
+# ---------------- batch ----------------
+
+def test_batch_analyze_in_order_and_saved(client, user):
+    _, _, h = user
+    texts = ["khana thanda tha", "  delivery fast thi  ", "refund nahi mila", "app crash hota hai"]
+    r = client.post("/v1/analyze/batch", json={"texts": texts}, headers=h)
+    assert r.status_code == 200, r.text
+    res = r.json()["results"]
+    assert [x["text"] for x in res] == [t.strip() for t in texts]
+    for x in res:
+        _check_result(x["text"], x)
+    assert client.get("/v1/reviews", headers=h).json()["total"] == 4
+
+
+@pytest.mark.parametrize("payload", [{"texts": []}, {"texts": ["ok"] * 51}, {"texts": ["ok", "   "]},
+                                     {"texts": ["a" * 2001]}, {"texts": "not a list"}, {}])
+def test_batch_rejects_bad_input(client, payload):
+    assert client.post("/v1/analyze/batch", json=payload).status_code == 422
+
+
+def test_batch_rate_limited(client):
+    codes = [client.post("/v1/analyze/batch", json={"texts": ["khana mast"]}).status_code for _ in range(6)]
+    assert codes[:5] == [200] * 5 and codes[5] == 429
+
+
+def test_batch_model_wrong_length_is_502(client, real_model_mode, monkeypatch):
+    monkeypatch.setattr(ml_client, "predict_batch", lambda texts: [])
+    assert client.post("/v1/analyze/batch", json={"texts": ["a", "b"]}).status_code == 502

@@ -14,6 +14,9 @@ from app.config import settings
 
 log = logging.getLogger("sentio")
 _health_cache: dict | None = None
+# Direct connection, no system proxy lookup. On Windows, urllib's proxy check
+# does slow DNS lookups that added ~2 s to every prediction.
+_opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
 
 
 def _call(method: str, path: str, payload: dict | None = None, timeout: float = 30.0) -> dict:
@@ -29,7 +32,7 @@ def _call(method: str, path: str, payload: dict | None = None, timeout: float = 
         headers["X-Sentio-Token"] = settings.ml_service_token
     req = urllib.request.Request(url, data=data, method=method, headers=headers)
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
+        with _opener.open(req, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
         # full details go to the server log only; the visitor gets a plain message
@@ -42,6 +45,11 @@ def _call(method: str, path: str, payload: dict | None = None, timeout: float = 
 
 def predict(text: str) -> dict:
     return _call("POST", "/predict", {"text": text})
+
+
+def predict_batch(texts: list[str]) -> list[dict]:
+    out = _call("POST", "/predict_batch", {"texts": texts}, timeout=180.0)
+    return out.get("results") if isinstance(out, dict) else None
 
 
 def model_info() -> dict:

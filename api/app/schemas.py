@@ -19,6 +19,27 @@ class AnalyzeRequest(BaseModel):
         return v
 
 
+MAX_BATCH = 50
+
+
+class BatchAnalyzeRequest(BaseModel):
+    texts: list[str] = Field(..., min_length=1, max_length=MAX_BATCH)
+    source_app: str | None = Field(None, max_length=50)
+
+    @field_validator("texts")
+    @classmethod
+    def clean(cls, v: list[str]) -> list[str]:
+        out = []
+        for i, t in enumerate(v, 1):
+            t = t.strip()
+            if not t:
+                raise ValueError(f"review {i} is empty")
+            if len(t) > 2000:
+                raise ValueError(f"review {i} is longer than 2,000 characters")
+            out.append(t)
+        return out
+
+
 class TokenAttribution(BaseModel):
     text: str
     lang: Literal["en", "hi_roman", "hi_deva", "emoji", "other"]
@@ -57,6 +78,10 @@ class AnalyzeResponse(BaseModel):
     aspects: list[AspectVerdict]
     model_version: str
     latency_ms: int
+
+
+class BatchAnalyzeResponse(BaseModel):
+    results: list[AnalyzeResponse]
 
 
 class ReviewSummary(BaseModel):

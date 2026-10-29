@@ -42,7 +42,7 @@ def client():
 def _fresh_limits():
     """Each test starts with empty rate-limit counters."""
     from app import ratelimit
-    for lim in (ratelimit.login_failures, ratelimit.register_limit, ratelimit.analyze_limit, ratelimit.feedback_limit):
+    for lim in (ratelimit.login_failures, ratelimit.register_limit, ratelimit.analyze_limit, ratelimit.feedback_limit, ratelimit.batch_limit):
         lim.clear()
     yield
 

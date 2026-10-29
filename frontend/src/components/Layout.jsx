@@ -20,7 +20,7 @@ function Nav() {
   const { user, signOut } = useAuth();
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
-  const links = [["/analyze", "Analyse"], ["/dashboard", "Dashboard"], ["/history", "History"]];
+  const links = [["/analyze", "Analyse"], ["/bulk", "Bulk"], ["/dashboard", "Dashboard"], ["/history", "History"]];
   const desktop = ({ isActive }) => (isActive ? "text-ink" : "text-muted hover:text-ink");
   const out = () => { signOut(); setOpen(false); navigate("/"); };
   return (

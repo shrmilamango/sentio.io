@@ -11,6 +11,7 @@ import { AuthProvider, RequireAuth } from "./lib/auth";
 import { Layout } from "./components/Layout";
 import Landing from "./pages/Landing";
 import Analyze from "./pages/Analyze";
+import Bulk from "./pages/Bulk";
 import { Login, Register } from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
 import History from "./pages/History";
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route element={<Layout />}>
             <Route index element={<Landing />} />
             <Route path="analyze" element={<Analyze />} />
+            <Route path="bulk" element={<Bulk />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
             <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} />

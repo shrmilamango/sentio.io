@@ -116,6 +116,10 @@ class Req(BaseModel):
     text: str = Field(..., min_length=1, max_length=2000)
 
 
+class BatchReq(BaseModel):
+    texts: list[str] = Field(..., min_length=1, max_length=50)
+
+
 @app.get("/health", dependencies=[Depends(check_token)])
 def health():
     t = RESULTS.get("test", {})
@@ -130,6 +134,16 @@ def health():
 def predict(req: Req):
     with _lock:
         return _predict(req)
+
+
+@app.post("/predict_batch", dependencies=[Depends(check_token)])
+def predict_batch(req: BatchReq):
+    """Several reviews in one request (used by the API's /v1/analyze/batch)."""
+    for t in req.texts:
+        if not 1 <= len(t) <= 2000:
+            raise HTTPException(status_code=422, detail="each text must be 1-2000 characters")
+    with _lock:
+        return {"results": [_predict(Req(text=t)) for t in req.texts]}
 
 
 def _predict(req: Req):
