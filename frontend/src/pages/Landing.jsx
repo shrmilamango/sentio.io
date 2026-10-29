@@ -21,15 +21,6 @@ const HERO_EXAMPLES = [
   ],
 ];
 
-// Scores on the same frozen test set of 277 reviews (ML/results/RESULTS.md)
-const MODELS = [
-  { name: "HingRoBERTa (ours, deployed)", score: 0.817, best: true },
-  { name: "TF-IDF + logistic regression", score: 0.67 },
-  { name: "mBERT", score: 0.635 },
-  { name: "XLM-RoBERTa", score: 0.598 },
-  { name: "Always guessing “negative”", score: 0.304 },
-];
-
 const FAQ = [
   ["What is Hinglish, and why does it need its own model?",
    "Hinglish mixes Hindi and English in one sentence, usually typed in English letters: “khana thanda tha but delivery fast thi”. English-only models miss the Hindi words, and Hindi models miss the English ones. Sentio.io is trained on 2,291 real reviews written exactly like this."],
@@ -41,13 +32,6 @@ const FAQ = [
    "It works best on Hindi typed in English letters, which is how almost all app reviews are written. Devanagari is recognised but was rare in the training data."],
   ["Is my review stored?",
    "If you are signed in, it is saved to your own history and dashboard, and only you can see it. Without signing in, it is stored with no name attached and is not shown to anyone."],
-];
-
-const STEPS = [
-  ["Collect", "Over 240,000 Play Store and Google Maps reviews for a dozen food and grocery apps, filtered down to genuinely code-mixed Hinglish."],
-  ["Label", "Every review was labelled by hand: overall sentiment plus seven aspects. Three annotators agreed with κ = 0.83 on a shared set of 200."],
-  ["Train", "We fine-tuned five models on the same split and kept the best, HingRoBERTa, which reads Hinglish natively."],
-  ["Read", "Paste any review: the model returns the overall sentiment and a verdict for each part of the order it mentions."],
 ];
 
 function Hero() {
@@ -143,58 +127,6 @@ function Aspects() {
   );
 }
 
-function Proof() {
-  return (
-    <section className="wrap py-24">
-      <div className="grid gap-14 lg:grid-cols-[1fr_1.3fr] lg:gap-20">
-        <div>
-          <h2 className="text-4xl sm:text-5xl">Built on our own data.</h2>
-          <p className="mt-6 max-w-prose text-muted">
-            No public dataset covers Hinglish food-delivery reviews by aspect, so we made one:
-            2,291 reviews, each labelled by hand. Every model below was trained on the same reviews
-            and scored on the same 277 reviews it had never seen.
-          </p>
-        </div>
-        <figure>
-          <figcaption className="mb-6 text-sm text-muted">Overall sentiment, macro-F1 (higher is better, 1.0 is perfect)</figcaption>
-          <ul className="space-y-5">
-            {MODELS.map((m) => (
-              <li key={m.name}>
-                <div className="mb-1.5 flex justify-between text-sm">
-                  <span className={m.best ? "font-semibold" : "text-muted"}>{m.name}</span>
-                  <span className="tabular-nums">{m.score.toFixed(2)}</span>
-                </div>
-                <div className="h-3 rounded-full bg-line/70">
-                  <div className={`h-3 rounded-full ${m.best ? "bg-indigo" : "bg-slate/60"}`} style={{ width: `${m.score * 100}%` }} />
-                </div>
-              </li>
-            ))}
-          </ul>
-        </figure>
-      </div>
-    </section>
-  );
-}
-
-function HowItWorks() {
-  return (
-    <section className="border-y border-line bg-white">
-      <div className="wrap py-24">
-        <h2 className="text-4xl sm:text-5xl">How we built it.</h2>
-        <ol className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {STEPS.map(([title, body], n) => (
-            <li key={title}>
-              <span className="font-serif text-5xl text-haldi-deep">{n + 1}</span>
-              <h3 className="mt-3 font-sans text-lg font-semibold">{title}</h3>
-              <p className="mt-2 text-muted">{body}</p>
-            </li>
-          ))}
-        </ol>
-      </div>
-    </section>
-  );
-}
-
 function Faq() {
   return (
     <section className="wrap py-24">
@@ -235,8 +167,6 @@ export default function Landing() {
       <TryIt />
       <StarsVsAspects />
       <Aspects />
-      <Proof />
-      <HowItWorks />
       <Faq />
       <ClosingCta />
     </>
