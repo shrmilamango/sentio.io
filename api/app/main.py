@@ -15,7 +15,7 @@ from app.auth import (
 from app.config import settings
 from app.database import Base, engine, get_db
 from app.ratelimit import (
-    analyze_limit, client_ip, login_failures, register_limit, too_many,
+    analyze_limit, client_ip, feedback_limit, login_failures, register_limit, too_many,
 )
 
 log = logging.getLogger("sentio")
@@ -235,6 +235,38 @@ def analyze(
             "model_version", "latency_ms",
         )},
     )
+
+
+@app.post("/v1/analyses/{analysis_id}/feedback", response_model=schemas.FeedbackOut)
+def give_feedback(
+    analysis_id: int,
+    payload: schemas.FeedbackRequest,
+    request: Request,
+    db: Session = Depends(get_db),
+    user: models.User | None = Depends(get_optional_user),
+):
+    """Was this result right? Open to everyone, like /v1/analyze.
+    One answer per analysis; sending again replaces it. Reviews saved to a
+    user's history only accept feedback from that user."""
+    feedback_limit.check_and_hit(f"user:{user.id}" if user else f"ip:{client_ip(request)}")
+    a = db.get(models.Analysis, analysis_id)
+    owner = a.review.user_id if a else None
+    if a is None or (owner is not None and (user is None or user.id != owner)):
+        raise HTTPException(status_code=404, detail="Analysis not found")
+    if not payload.is_correct and payload.correct_polarity is None and not payload.note:
+        raise HTTPException(status_code=422, detail="Say what the right answer is, or add a note")
+
+    fb = db.scalar(select(models.Feedback).where(models.Feedback.analysis_id == analysis_id))
+    if fb is None:
+        fb = models.Feedback(analysis_id=analysis_id)
+        db.add(fb)
+    fb.user_id = user.id if user else None
+    fb.is_correct = payload.is_correct
+    fb.correct_polarity = None if payload.is_correct else payload.correct_polarity
+    fb.note = (payload.note or "").strip() or None
+    db.commit()
+    return schemas.FeedbackOut(analysis_id=analysis_id, is_correct=fb.is_correct,
+                               correct_polarity=fb.correct_polarity)
 
 
 @app.get("/v1/reviews", response_model=schemas.ReviewPage)

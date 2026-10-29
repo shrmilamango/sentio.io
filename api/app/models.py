@@ -121,3 +121,22 @@ class AspectResult(Base):
 
     analysis: Mapped["Analysis"] = relationship(back_populates="aspects")
     aspect:   Mapped["Aspect"]   = relationship()
+
+
+class Feedback(Base):
+    """A user's verdict on one analysis: right or wrong, and the correct answer.
+    These rows become new training examples for the next model version."""
+    __tablename__ = "feedback"
+
+    id:          Mapped[int]  = mapped_column(Integer, primary_key=True)
+    analysis_id: Mapped[int]  = mapped_column(
+        ForeignKey("analyses.id", ondelete="CASCADE"), nullable=False, unique=True
+    )
+    user_id:     Mapped[int | None] = mapped_column(ForeignKey("users.id"))
+    is_correct:  Mapped[bool] = mapped_column(Boolean, nullable=False)
+    # what the overall sentiment should have been (only when is_correct is False)
+    correct_polarity: Mapped[str | None] = mapped_column(String(10))
+    note:        Mapped[str | None] = mapped_column(String(500))
+    created_at:  Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now()
+    )

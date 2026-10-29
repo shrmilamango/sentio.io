@@ -98,7 +98,7 @@ def test_token_sent_to_model_service(monkeypatch):
     def fake_urlopen(req, timeout):
         seen.update(req.headers); return Resp()
     monkeypatch.setattr(settings, "ml_service_token", "s3cret")
-    monkeypatch.setattr(ml_client.urllib.request, "urlopen", fake_urlopen)
+    monkeypatch.setattr(ml_client._opener, "open", fake_urlopen)
     ml_client._call("GET", "/health")
     assert seen.get("X-sentio-token") == "s3cret"
 
@@ -141,3 +141,38 @@ def test_migration_adds_user_id(tmp_path, monkeypatch):
     monkeypatch.setattr(main, "engine", eng)
     main._migrate(); main._migrate()          # safe to run twice
     assert "user_id" in {c["name"] for c in inspect(eng).get_columns("reviews")}
+
+
+# ---------- feedback ----------
+
+def test_feedback_anonymous_review(client):
+    rid = client.post("/v1/analyze", json={"text": "Tumlog meri behen se seekhlo"}).json()["id"]
+    r = client.post(f"/v1/analyses/{rid}/feedback", json={"is_correct": False, "correct_polarity": "negative", "note": "sarcasm"})
+    assert r.status_code == 200 and r.json()["correct_polarity"] == "negative"
+    # sending again replaces the answer
+    r = client.post(f"/v1/analyses/{rid}/feedback", json={"is_correct": True, "correct_polarity": "positive"})
+    assert r.json() == {"analysis_id": rid, "is_correct": True, "correct_polarity": None}
+
+
+def test_feedback_validation(client):
+    rid = client.post("/v1/analyze", json={"text": "khana thik tha"}).json()["id"]
+    assert client.post(f"/v1/analyses/{rid}/feedback", json={"is_correct": False}).status_code == 422
+    assert client.post(f"/v1/analyses/{rid}/feedback", json={"is_correct": False, "correct_polarity": "great"}).status_code == 422
+    assert client.post(f"/v1/analyses/{rid}/feedback", json={"is_correct": True, "note": "x" * 501}).status_code == 422
+    assert client.post("/v1/analyses/999999/feedback", json={"is_correct": True}).status_code == 404
+
+
+def test_feedback_on_someone_elses_review_is_refused(client, user):
+    _, _, owner = user
+    rid = client.post("/v1/analyze", json={"text": "private review bekar"}, headers=owner).json()["id"]
+    assert client.post(f"/v1/analyses/{rid}/feedback", json={"is_correct": True}).status_code == 404
+    client.post("/v1/auth/register", json={"username": "fb_other", "password": "longenough1"})
+    other = {"Authorization": "Bearer " + client.post("/v1/auth/login", json={"username": "fb_other", "password": "longenough1"}).json()["access_token"]}
+    assert client.post(f"/v1/analyses/{rid}/feedback", json={"is_correct": True}, headers=other).status_code == 404
+    assert client.post(f"/v1/analyses/{rid}/feedback", json={"is_correct": True}, headers=owner).status_code == 200
+
+
+def test_feedback_rate_limited(client):
+    rid = client.post("/v1/analyze", json={"text": "order late"}).json()["id"]
+    codes = [client.post(f"/v1/analyses/{rid}/feedback", json={"is_correct": True}).status_code for _ in range(32)]
+    assert codes.count(200) == 30 and codes[-1] == 429

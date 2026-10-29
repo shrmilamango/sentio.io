@@ -64,4 +64,5 @@ export const api = {
   review: (id) => request(`/v1/reviews/${id}`, { auth: true }),
   insights: () => request("/v1/insights/summary", { auth: true }),
   models: () => request("/v1/models"),
+  feedback: (analysisId, body) => request(`/v1/analyses/${analysisId}/feedback`, { method: "POST", body, auth: true }),
 };

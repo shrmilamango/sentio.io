@@ -25,6 +25,8 @@ from pydantic import BaseModel, Field
 from torch import nn
 from transformers import AutoConfig, AutoModel, AutoTokenizer
 
+from slang import apply_slang_guard
+
 HERE = Path(__file__).resolve().parent
 ap = argparse.ArgumentParser()
 ap.add_argument("--tag", default="hingroberta")
@@ -174,6 +176,10 @@ def _predict(req: Req):
             aspects.append({"aspect": a, "polarity": label, "confidence": round(float(pa[j]), 3),
                             "span": find_span(text, a)})
 
+    polarity, confidence = oc[k], round(float(p[k]), 3)
+    # safety net for strong slang the model never saw in training (see slang.py)
+    polarity, confidence, aspects, _ = apply_slang_guard(text, polarity, confidence, aspects)
+
     counts = {}
     for tkn in tokens:
         counts[tkn["lang"]] = counts.get(tkn["lang"], 0) + 1
@@ -181,8 +187,8 @@ def _predict(req: Req):
 
     return {
         "normalized_text": re.sub(r"(.)\1{2,}", r"\1", text.lower()).strip(),
-        "polarity": oc[k],
-        "confidence": round(float(p[k]), 3),
+        "polarity": polarity,
+        "confidence": confidence,
         "sarcasm": False,
         "language_distribution": dist,
         "tokens": tokens,

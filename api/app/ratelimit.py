@@ -62,3 +62,4 @@ def client_ip(request: Request) -> str:
 login_failures = RateLimiter(limit=10, window_seconds=15 * 60)   # per IP and per username
 register_limit = RateLimiter(limit=5, window_seconds=60 * 60)    # new accounts per IP per hour
 analyze_limit = RateLimiter(limit=30, window_seconds=60)         # analyses per IP per minute
+feedback_limit = RateLimiter(limit=30, window_seconds=60)        # feedback clicks per IP per minute

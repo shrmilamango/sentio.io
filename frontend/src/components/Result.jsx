@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { AnnotatedText, segmentsFromResult } from "./Annotated";
+import { Feedback } from "./Feedback";
 import { ASPECTS, LANGUAGES, POLARITY, aspectLabel } from "../lib/aspects";
 
 const pct = (x) => `${Math.round(x * 100)}%`;
+const UNSURE_BELOW = 0.7;
 
 export function VerdictPill({ polarity, size = "md" }) {
   const p = POLARITY[polarity] ?? POLARITY.neutral;
@@ -69,17 +71,30 @@ export function Result({ result }) {
   const [showWords, setShowWords] = useState(false);
   const segments = segmentsFromResult(result);
   const unplaced = result.aspects.filter((a) => !a.span);
-  const unsure = result.confidence < 0.5;
+  // Below this the model is often wrong: sarcasm, taunts, idioms ("I'd pay extra for the last slice")
+  const unsure = result.confidence < UNSURE_BELOW;
 
   return (
     <div className="space-y-10">
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <VerdictPill polarity={result.polarity} />
-        <span className="text-muted">
-          overall, {pct(result.confidence)} confident
-          {unsure && " — this review mixes opinions, so the overall call is close"}
-        </span>
-      </div>
+      {unsure ? (
+        <div>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-haldi-soft px-3.5 py-1 text-base font-medium text-ink">
+              <span aria-hidden>?</span> Not sure
+            </span>
+            <span className="text-muted">best guess: {(POLARITY[result.polarity] ?? POLARITY.neutral).label.toLowerCase()}, only {pct(result.confidence)} confident</span>
+          </div>
+          <p className="mt-3 max-w-prose text-muted">
+            This review may be sarcastic, a taunt or an idiom, which the model often misreads. Treat this result as a guess,
+            and tell us below if it's wrong.
+          </p>
+        </div>
+      ) : (
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <VerdictPill polarity={result.polarity} />
+          <span className="text-muted">overall, {pct(result.confidence)} confident</span>
+        </div>
+      )}
 
       <AnnotatedText segments={segments} size="lg" labels={false} />
 
@@ -123,6 +138,8 @@ export function Result({ result }) {
           </div>
         )}
       </section>
+
+      <Feedback key={result.id} analysisId={result.id} />
 
       <p className="text-sm text-muted">
         Model {result.model_version}, answered in {result.latency_ms} ms

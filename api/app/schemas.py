@@ -88,6 +88,18 @@ class InsightsSummary(BaseModel):
     language_split: dict[str, float]
 
 
+class FeedbackRequest(BaseModel):
+    is_correct: bool
+    correct_polarity: Polarity | None = None
+    note: str | None = Field(None, max_length=500)
+
+
+class FeedbackOut(BaseModel):
+    analysis_id: int
+    is_correct: bool
+    correct_polarity: Polarity | None
+
+
 class ModelInfo(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
