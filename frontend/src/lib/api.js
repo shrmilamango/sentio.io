@@ -18,6 +18,7 @@ export class ApiError extends Error {
 
 function messageFor(status, detail) {
   if (status === 0) return "Can't reach the server. Check that the backend is running.";
+  if (status === 404 && detail === "Not Found") return "The server is still updating to the latest version. Try again in a minute.";
   if (status === 429) return "Too many tries in a short time. Please wait a few minutes and try again.";
   if (status === 502) return "The model gave an unexpected answer. Try again in a moment.";
   if (status === 503) return "Analysis is offline right now — the model service isn't running. Try again in a minute.";

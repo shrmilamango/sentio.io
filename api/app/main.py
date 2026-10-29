@@ -249,11 +249,12 @@ def analyze_batch(
     payload: schemas.BatchAnalyzeRequest,
     request: Request,
     db: Session = Depends(get_db),
-    user: models.User | None = Depends(get_optional_user),
+    user: models.User = Depends(get_current_user),
 ):
     """Analyze up to 50 reviews in one go (one call to the model service).
-    Results come back in the same order as the input."""
-    batch_limit.check_and_hit(f"user:{user.id}" if user else f"ip:{client_ip(request)}")
+    Login required; results are saved to the user's history and come back
+    in the same order as the input."""
+    batch_limit.check_and_hit(f"user:{user.id}")
     texts = payload.texts
     if settings.use_fake_model:
         raws = [fake_model.predict(t) for t in texts]

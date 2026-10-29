@@ -25,7 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route element={<Layout />}>
             <Route index element={<Landing />} />
             <Route path="analyze" element={<Analyze />} />
-            <Route path="bulk" element={<Bulk />} />
+            <Route path="bulk" element={<RequireAuth><Bulk /></RequireAuth>} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
             <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} />

@@ -9,7 +9,7 @@ export default function Analyze() {
         Paste a customer review. You'll get the overall sentiment and a verdict for each part of the order it mentions.
       </p>
       <p className="mt-2 text-sm text-muted">
-        Have a lot of reviews? <Link to="/bulk" className="font-medium text-indigo underline underline-offset-4">Analyse up to 50 at once</Link>.
+        Have a lot of reviews? <Link to="/bulk" className="font-medium text-indigo underline underline-offset-4">Analyse up to 50 at once</Link> (needs a free account).
       </p>
       <div className="mt-10"><AnalyzeBox autoFocus /></div>
     </section>

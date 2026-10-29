@@ -210,15 +210,21 @@ def test_batch_analyze_in_order_and_saved(client, user):
 
 @pytest.mark.parametrize("payload", [{"texts": []}, {"texts": ["ok"] * 51}, {"texts": ["ok", "   "]},
                                      {"texts": ["a" * 2001]}, {"texts": "not a list"}, {}])
-def test_batch_rejects_bad_input(client, payload):
-    assert client.post("/v1/analyze/batch", json=payload).status_code == 422
+def test_batch_rejects_bad_input(client, user, payload):
+    assert client.post("/v1/analyze/batch", json=payload, headers=user[2]).status_code == 422
 
 
-def test_batch_rate_limited(client):
-    codes = [client.post("/v1/analyze/batch", json={"texts": ["khana mast"]}).status_code for _ in range(6)]
+def test_batch_needs_login(client):
+    assert client.post("/v1/analyze/batch", json={"texts": ["khana mast"]}).status_code == 401
+    assert client.post("/v1/analyze/batch", json={"texts": ["khana mast"]},
+                       headers={"Authorization": "Bearer nope"}).status_code == 401
+
+
+def test_batch_rate_limited(client, user):
+    codes = [client.post("/v1/analyze/batch", json={"texts": ["khana mast"]}, headers=user[2]).status_code for _ in range(6)]
     assert codes[:5] == [200] * 5 and codes[5] == 429
 
 
-def test_batch_model_wrong_length_is_502(client, real_model_mode, monkeypatch):
+def test_batch_model_wrong_length_is_502(client, user, real_model_mode, monkeypatch):
     monkeypatch.setattr(ml_client, "predict_batch", lambda texts: [])
-    assert client.post("/v1/analyze/batch", json={"texts": ["a", "b"]}).status_code == 502
+    assert client.post("/v1/analyze/batch", json={"texts": ["a", "b"]}, headers=user[2]).status_code == 502

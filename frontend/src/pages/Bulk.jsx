@@ -1,7 +1,6 @@
 import { useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../lib/api";
-import { useAuth } from "../lib/auth";
 import { ASPECTS, POLARITY, aspectLabel } from "../lib/aspects";
 import { reviewsFromCsv, toCsv } from "../lib/csv";
 import { Result, UNSURE_BELOW, VerdictPill } from "../components/Result";
@@ -118,7 +117,6 @@ function download(results) {
 }
 
 export default function Bulk() {
-  const { user } = useAuth();
   const [text, setText] = useState("");
   const [results, setResults] = useState(null);
   const [error, setError] = useState("");
@@ -203,13 +201,7 @@ export default function Bulk() {
           <ul className="mt-4 divide-y divide-line border-y border-line">
             {results.map((r, i) => <Row key={r.id} r={r} n={i + 1} />)}
           </ul>
-          {user ? (
-            <p className="mt-6 text-sm text-muted">Saved to your <Link to="/dashboard" className="font-medium text-indigo underline underline-offset-4">dashboard</Link> and history.</p>
-          ) : (
-            <p className="mt-6 text-sm text-muted">
-              <Link to="/login" className="font-medium text-indigo underline underline-offset-4">Sign in</Link> to keep these reviews in your own dashboard.
-            </p>
-          )}
+          <p className="mt-6 text-sm text-muted">Saved to your <Link to="/dashboard" className="font-medium text-indigo underline underline-offset-4">dashboard</Link> and history.</p>
         </div>
       )}
     </section>
